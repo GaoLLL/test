@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?><img src="/Public/images/welcome1.png" style="width: 100%;">
