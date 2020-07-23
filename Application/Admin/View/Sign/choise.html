@@ -1,0 +1,109 @@
+<include file="Index/header"/>
+<div>
+    <nav class="breadcrumb">
+        <a href="javascript:;" class=" message-right" id="qdxz">
+            <i class="fa fa-check-square-o"></i>&nbsp;确定选择&nbsp;
+        </a>
+    </nav>
+    <form action="__URL__/seal">
+        <div class="search_list">
+        <span class="search_list_content">
+            姓名：
+            <input type="text" name="title" value="{$search['title']}" width="50" class="search_input"/>
+        </span>
+            <span class="search_list_content">
+            &nbsp;&nbsp;<input type="submit" value="查询" class="btn_fa_css btn btn-primary" style="margin:0;"/>
+        </span>
+        </div>
+        <div class="page-container">
+            <div class="mt-20">
+                <table class="table table-border table-bordered table-bg table-hover table-sort">
+                    <thead>
+                    <tr class="text-c">
+                        <th width="40"></th>
+                        <th width="40">序号</th>
+                        <th>签名</th>
+                        <th>姓名</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <empty name="list">
+                        <tr class="text-c va-m">
+                            <td colspan="8">暂无符合条件的数据！</td>
+                        </tr>
+                        <else/>
+                        <volist name="list" id="vo" key="k">
+                            <tr class="text-c">
+                                <td width="40"><input name="id" type="radio" value="{$vo.id}" data-img="{$vo.signname}" data-name="{$vo.username}" class="nowxz"></td>
+                                <td width="40"><span class="label label-success radius">{$k}</span></td>
+                                <td class="text-l" style="cursor:pointer;"><img src="{$vo.signname}" width="100" height="50" class="imgshow" /></td>
+                                <td class="text-l">{$vo.username}</td>
+                            </tr>
+                        </volist>
+                    </empty>
+                    </tbody>
+                </table>
+                <div class="scott">
+                    <volist name="ActBtns" id="btn">
+                        <eq name="btn.action" value="alldel">
+                            <a href="javascript:;" class="{$btn.action}" style="float:left;">
+                                {$btn.name}
+                            </a>
+                        </eq>
+                    </volist>
+                    <p style="margin-bottom:15px;">共{$count}条记录/每页显示<input type="text" size="5" name="pagesize" value="{$pagesize}" style="text-align:center;"/>条&nbsp;<input
+                            type="submit" value="GO"/></p>{$page}
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<input type="hidden" id="nownode" value="{$nownode}"/>
+<include file="Index/foot"/>
+<script>
+    $('.rbac').click(function () {
+        var id = $(this).data('id');
+        layer.open({
+            type: 2,
+            title: '管理员授权管理',
+            area: ['100vw', '100vh'],
+            content: '__URL__/rbac/id/' + id + '.html'
+        })
+    });
+    $(function () {
+        $(".imgshow").click(function(){
+            var img = $(this).attr('src');
+            layer.open({
+                type: 1,
+                title: false,
+                closeBtn: 0,
+                area: ['50%','50%'],
+                skin: 'layui-layer-nobg', //没有背景色
+                shadeClose: true,
+                content: "<img src='"+img+"' width='100%' height='100%'>"
+            });
+        })
+
+        $("#qdxz").on('click',function(){
+            var _this = $('input:radio[name="id"]:checked');
+            var str = _this.val();
+            var name = _this.data('name');
+            var img = "<span style='margin-left: 10px' ><b>"+name+"</b>&nbsp;&nbsp;<img src='"+_this.data('img')+"' width='100' height='30' onclick='showimg(this)' style='cursor:pointer;'></span>";
+            /* $.each($('input:checkbox:checked'),function(){
+                 if($(this).val()!=''){
+                     str+=$(this).val()+',';
+                     img+="<span style='margin-left: 10px' ><img src='"+$(this).data('img')+"' width='100' height='100' onclick='showimg(this)' style='cursor:pointer;'></span>"
+                 }
+             });*/
+            var nownode = $("#nownode").val();
+            parent.$("#rqshow").show();
+            parent.$("#nowshow"+nownode).html(img);
+            parent.$("#uid"+nownode).val(str);
+            var indexgg = parent.layer.getFrameIndex(window.name);
+            parent.layer.close(indexgg);
+            console.log(str);
+            console.log(img);
+        })
+    })
+
+</script>

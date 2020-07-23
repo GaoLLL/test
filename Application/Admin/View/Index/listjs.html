@@ -1,0 +1,143 @@
+<script>
+    $(document).ready(function () {
+        var flag = 1;
+        /**
+         * 添加
+         */
+        $('.add').click(function () {
+            var index = layer.open({
+                type: 2,
+                title: '<i class="fa fa-plus-square-o" style="color: red;"> </i> 新增',
+                area: ['700px', '470px'],
+                fix: false, //不固定
+                content: '__URL__/add',
+                btn: ['确定', '关闭'],
+                maxmin: true,
+                yes: function () {
+                    var form = layer.getChildFrame('form', index);
+                    if (flag == 2) {
+                        return;
+                    }
+                    flag = 2;
+                    $.post('__URL__/add', form.serialize(), function (data) {
+                        if (data.status == 1) {
+                            layer.msg(data.msg, {
+                                time: 2000,
+                                end: function () {
+                                    layer.close(index);
+                                    window.location.reload();
+                                }
+                            })
+                        } else {
+                            layer.msg(data.msg, function () {
+                                flag = 1;
+                            });
+                        }
+                    }, 'json')
+                }
+            });
+            layer.full(index);
+        });
+        /**
+         * 修改
+         */
+        $('.save').click(function () {
+            var title = $(this).data('name');
+            var id = $(this).data('id');
+            var index = layer.open({
+                type: 2,
+                title: '<i class="fa fa-plus-square-o" style="color: red;"> </i> 编辑' + title,
+                area: ['700px', '470px'],
+                fix: false, //不固定
+                content: '__URL__/save/id/' + id,
+                btn: ['确定', '关闭'],
+                maxmin: true,
+                yes: function () {
+                    var form = layer.getChildFrame('form', index);
+                    if (flag == 2) {
+                        return;
+                    }
+                    flag = 2;
+                    $.post('__URL__/save', form.serialize(), function (data) {
+                        if (data.status == 1) {
+                            layer.msg(data.msg, {
+                                time: 2000,
+                                end: function () {
+                                    layer.close(index);
+                                    window.location.reload();
+                                }
+                            })
+                        } else {
+                            layer.msg(data.msg, function () {
+                                flag = 1;
+                            });
+                        }
+                    }, 'json')
+                }
+            });
+            layer.full(index);
+        });
+        /**
+         * 删除
+         */
+        $('.del').click(function () {
+            var title = $(this).data('name');
+            var id = $(this).data('id');
+            var index = layer.msg('是否删除' + title + '? <br>删除后不可恢复，请谨慎操作！', {
+                icon: 5,
+                time: 0,
+                shade: [0.8, '#393D49'],
+                btn: ['删除', '取消'],
+                yes: function () {
+                    if(flag == 2){
+                        return;
+                    }
+                    flag = 2;
+                    $.post('__URL__/del', {id: id}, function (data) {
+                        if (data.status == 1) {
+                            layer.msg(data.msg, {
+                                time: 1000, end: function () {
+                                    window.location.reload();
+                                }
+                            })
+                        } else {
+                            layer.msg(data.msg, function () {
+                                flag = 1;
+                            });
+                        }
+                    }, 'json');
+                }
+            });
+        });
+        /**
+         * 删除选中
+         */
+        $('.alldel').click(function () {
+            var index = layer.msg('是否确认删除' +  '? <br>删除后不可恢复，请谨慎操作！', {
+                icon: 5,
+                time: 0,
+                shade: [0.8, '#393D49'],
+                btn: ['删除', '取消'],
+                yes: function () {
+                    if(flag == 2){
+                        return;
+                    }
+                    flag = 2;
+                    $.post('__URL__/alldel', $('form').serialize() , function (data) {
+                        if (data.status == 1) {
+                            layer.msg(data.msg, {
+                                time: 1000, end: function () {
+                                    window.location.reload();
+                                }
+                            })
+                        } else {
+                            layer.msg(data.msg, function () {
+                                flag = 1;
+                            });
+                        }
+                    }, 'json');
+                }
+            });
+        });
+    });
+</script>

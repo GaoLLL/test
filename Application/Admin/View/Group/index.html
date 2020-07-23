@@ -1,0 +1,66 @@
+<include file="Index/header"/>
+<div>
+    <nav class="breadcrumb">
+        <i class="fa fa-list-ul"></i> 系统管理员权限组列表
+        <volist name="ActBtns" id="btn">
+            <eq name="btn.action" value="add">
+                <a href="javascript:;" title="{$btn.name}" data-id="{$vo.id}" data-name="{$vo.username}"
+                   class="{$btn.action} message-right">
+                    <i class="fa fa-{$btn.icon}"></i>&nbsp;{$btn.name}&nbsp;
+                </a>
+            </eq>
+        </volist>
+    </nav>
+    <form action="__URL__/index">
+        <div class="page-container">
+            <div class="mt-20">
+                <table class="table table-border table-bordered table-bg table-hover table-sort">
+                    <thead>
+                    <tr class="text-c">
+                        <th width="40">序号</th>
+                        <th>权限组名称</th>
+                        <th width="100">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <empty name="list">
+                        <tr class="text-c va-m">
+                            <td colspan="4">暂无符合条件的数据！</td>
+                        </tr>
+                        <else/>
+                        <volist name="list" id="vo" key="k">
+                            <tr class="text-c">
+                                <td width="40"><span class="label label-success radius">{$k}</span></td>
+                                <td class="text-l">{$vo.name}</td>
+                                <td class="td-manage">
+                                    <volist name="ActBtns" id="btn">
+                                        <if condition="$btn['action'] neq 'add' && $btn['action'] neq 'alldel'">
+                                            <a href="javascript:;" title="{$btn.name}" data-id="{$vo.id}"
+                                               data-name="{$vo.username}" class="{$btn.action}">
+                                                <i class="fa fa-{$btn.icon}"></i>&nbsp;
+                                            </a>
+                                        </if>
+                                    </volist>
+                                </td>
+                            </tr>
+                        </volist>
+                    </empty>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
+<include file="Index/foot"/>
+<include file="Index/listjs"/>
+<script>
+    $('.rbac').click(function () {
+        var id = $(this).data('id');
+        layer.open({
+            type: 2,
+            title: '管理员授权管理',
+            area: ['100vw', '100vh'],
+            content: '__URL__/rbac/id/' + id + '.html'
+        })
+    });
+</script>

@@ -1,0 +1,2665 @@
+@charset "utf-8";
+/* CSS Document */
+/*通用*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+/*	cursor: none;*/
+	border: none;
+}
+body{
+	background-color: #FFFFFF;
+}
+/*登录注册*/
+.login-logo{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	background: url("../images/login-bg.png") center center no-repeat;
+	background-size: 100% 100%;
+}
+.login-logo img{
+	width: 18.75vw;
+	height: 18.75vw;
+	margin: 6.25vw auto 22.81vw auto;
+	display: block;
+}
+.login-choose{
+	width: 78%;
+	overflow: hidden;
+	display: block;
+	margin: -4.53vw auto 0 auto;
+}
+.login-choose a{
+	width: 49%;
+	float: left;
+	display: block;
+	background-color: #EEEEEE;
+	text-align: center;
+	font-size: 3.75vw;
+	line-height: 10.31vw;
+	color: #a5a4a4;
+}
+.login-choose a:nth-child(2){
+	margin: 0 0.5%;
+}
+.login-choose a.login-choose-cur{
+	color: #FFFFFF;
+	background-color: #39c2ff;
+}
+.login-list{
+	width: 78%;
+	margin: 4.53vw auto 0 auto;
+	overflow: hidden;
+	display: block;
+}
+.login-list li{
+	padding-top: 3.12vw;
+	border-bottom: solid 1px #7093ff;
+	overflow: hidden;
+	display: block;
+}
+.login-list li p{
+	width: 10%;
+	float: left;
+	display: block;
+	overflow: hidden;
+}
+.login-list li p img{
+	height: 4.69vw;
+	margin: 7.81px auto 0 auto;
+	display: block;
+}
+.login-list li span{
+	font-size: 3.75vw;
+	line-height: 10.31vw;
+	display: block;
+	width: 14%;
+	color: #555555;
+	float: left;
+}
+.login-list li input{
+	width: 76%;
+	float: left;
+	display: block;
+	font-size: 3.75vw;
+	line-height: 10.31vw;
+	background: none;
+}
+.login-btn{
+	margin: 33.75vw auto 0 auto;
+	width: 78%;
+	display: block;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #7093ff;
+	border: solid 1px #7093ff;
+	font-size: 4.69vw;
+	line-height: 9.38vw;
+}
+.login-btn:hover{
+	background-color: #6087fd;
+	border: solid 1px #6087fd;
+}
+.registered-btn{
+	margin: 4.69vw auto 0 auto;
+	width: 78%;
+	display: block;
+	text-align: center;
+	color: #9b9b9b;
+	background-color: #FFFFFF;
+	font-size: 4.69vw;
+	line-height: 9.38vw;
+	border: solid 1px #7093ff;
+}
+.registered-btn:hover{
+	background-color: #f8f5f5;
+}
+.login-list li.login-ID span{
+	width: 28%;
+}
+.login-list li.login-ID input{
+	width: 62%;
+}
+.login-list li.login-code span{
+	width: 19%;
+}
+.login-list li.login-code input{
+	width: 36%;
+}
+.login-safe-code{
+	width: 35%;
+	float: left;
+	display: block;
+	height: 10.3vw;
+	margin-bottom: 1vw;
+}
+/*首页*/
+.index-banner{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.index-banner img{
+	width: 100%;
+	display: block;
+}
+.perfect-info{
+	position: fixed;
+	right: 1.56vw;
+	top: 4.69vw;
+	width: 12.5vw;
+	height: 12.5vw;
+	overflow: hidden;
+	display: block;
+}
+.perfect-info img{
+	width: 100%;
+	display: block;
+}
+.index-class{
+	width: 90%;
+	padding: 0 5%;
+	overflow: hidden;
+	display: block;
+	background: url("../images/idnex-class-bg.png") center top no-repeat;
+	background-size: 100%;
+}
+.index-class li{
+	width: 33.3%;
+	float: left;
+	display: block;
+	overflow: hidden;
+	min-height: 62.5vw;
+}
+.index-class li a{
+	background-color: #FFFFFF;
+	width: 28.13vw;
+	display: block;
+	margin: 3.13vw auto 0 auto;
+	overflow: hidden;
+	border: solid 2px #eeeeee;
+}
+.index-class li a img{
+	width: 14.06vw;
+	display: block;
+	margin: 4.69vw auto 1.56vw auto;
+}
+.index-class li a span{
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 3.75vw;
+	line-height: 5vw;
+	color: #232323;
+	margin-bottom: 2.34vw;
+}
+.index-footer-height{
+	height: 16.2vw;
+}
+.index-footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	background-color: #FFFFFF;
+	border-top: solid 1px #dcdcdc;
+	z-index: 500;
+}	
+.index-footer li{
+	width: 50%;
+	float: left;
+	display: block;
+	overflow: hidden;
+}
+.index-footer li a{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.index-footer li a img{
+	height: 7.81vw;
+	display: block;
+	margin: 2.19vw auto 0 auto;
+}
+.index-footer li a span{
+	width: 100%;
+	display: block;
+	color: #cecece;
+	font-size: 3.13vw;
+	line-height: 5.69vw;
+	text-align: center;
+	margin-bottom: 0.5vw;
+}
+.index-footer li a.index-footer-cur span{
+	color: #3195fe;
+}
+
+/*网签*/
+.start-signing{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	background: url("../images/idnex-class-bg.png") center top no-repeat;
+	background-size: 100%;
+}
+.start-signing-num{
+	width: 85%;
+	margin: 5.63vw auto 6.25vw auto;
+	overflow: hidden;
+	display: block;
+	height: 19.85vw;
+}
+.start-signing-num a{
+	width: 48%;
+	float: left;
+	margin: 0 1%;
+	overflow: hidden;
+	display: block;
+	background-color: rgba(255,255,255,0.5);
+	box-shadow: 0 0 5px 0 #dae1ff;
+}
+.start-signing-num p{
+	color: #454545;
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 4.69vw;
+	line-height: 6.25vw;
+	margin: 5.47vw 0 0 0;
+}
+.start-signing-num span{
+	color: #7093ff;
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 3.75vw;
+	line-height: 5.63vw;
+	margin: 0 0 2.5vw 0;
+}
+.start-signing-btn{
+	width: 83%;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto 8.59vw auto;
+	background-color: #7093ff;
+	color: #FFFFFF;
+	font-size: 4.69vw;
+	line-height: 9.38vw;
+	text-align: center;
+}
+.latest-documents{
+	width: 83%;
+	overflow: hidden;
+	margin: 0 auto;
+	display: block;
+}
+.latest-documents-title{
+	background: url("../images/latest-documents-bg-line.png") center center repeat-x;
+	background-size: 4px 1px;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.latest-documents-title span{
+	width: 22%;
+	display: block;
+	background-color: #FFFFFF;
+	font-size: 3.75vw;
+	line-height: 10.94vw;
+	color: #232323;
+}
+.latest-documents li{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin-bottom: 1.25vw;
+	background-color: #eeeeee;
+}
+.latest-documents li a{
+	width: 92%;
+	padding: 1.09vw 4% 1.41vw 4%;
+	overflow: hidden;
+	display: block;
+}
+.latest-documents li a p{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	font-size: 3.75vw;
+	color: #454545;
+	line-height: 6.56vw;
+}
+.latest-documents li a p span{
+	overflow: hidden;
+	display: block;
+	font-size: 2.81vw;
+	color: #232323;
+	line-height: 4.38vw;
+	width: 86%;
+	float: left;
+}
+.latest-documents li a p m{
+	width: 14%;
+	float: left;
+	font-size: 2.19vw;
+	line-height: 4.69vw;
+	display: block;
+	text-align: center;
+	border-radius: 0.5vw;
+	color: #FFFFFF;
+}
+.latest-documents li a p m.i-signed{
+	background-color: #f19149;
+}
+.latest-documents li a p m.sign-complete{
+	background-color: #32b16c;
+}
+.latest-documents li a p m.refusal-sign{
+	background-color: #c56666;
+}
+.latest-documents li a p m.past-due{
+	background-color: #7d7d7d;
+}
+.net-sign-footer-height{
+	height: 16.2vw;
+}
+.net-sign-footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	background-color: #FFFFFF;
+	border-top: solid 1px #dcdcdc;
+	z-index: 500;
+}	
+.net-sign-footer li{
+	width: 33.3%;
+	float: left;
+	display: block;
+	overflow: hidden;
+}
+.net-sign-footer li a{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.net-sign-footer li a img{
+	height: 7.81vw;
+	display: block;
+	margin: 2.19vw auto 0 auto;
+}
+.net-sign-footer li a span{
+	width: 100%;
+	display: block;
+	color: #cecece;
+	font-size: 3.13vw;
+	line-height: 5.69vw;
+	text-align: center;
+	margin-bottom: 0.5vw;
+}
+.net-sign-footer li a.net-sign-footer-cur span{
+	color: #3195fe;
+}
+/*公告通知*/
+.announcement_notice{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.announcement_notice li{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	border-bottom: solid 1px #eeeeee;
+}
+.announcement_notice li a{
+	width: 86%;
+	padding: 0 10% 0 4%;
+	background: url("../images/arrow.png") 93.125vw center no-repeat;
+	background-size: 1.88vw;
+	display: block;
+}
+.announcement_notice li a p{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	font-size: 4.38vw;
+	line-height: 6.88vw;
+	margin: 1.88vw auto 1.41vw auto;
+	color: #282828;
+}
+.announcement_notice li a span{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	font-size: 3.13vw;
+	line-height: 4.69vw;
+	margin: 0 auto 2.34vw auto;
+	color: #787878;
+}
+.notice-detail-title{
+	width: 90%;
+	overflow: hidden;
+	display: block;
+	color: #282828;
+	font-size: 4.69vw;
+	line-height: 6.88vw;
+	margin: 2.81vw auto 0 auto;
+	text-align: center;
+}
+.notice-detail-date{
+	width: 90%;
+	overflow: hidden;
+	display: block;
+	color: #787878;
+	font-size: 3.13vw;
+	line-height: 5.63vw;
+	margin: 0 auto 3.44vw auto;
+	text-align: center;
+}
+.notice-detail-cont{
+	font-size: 3.75vw;
+	line-height: 5.31vw;
+	margin: 0 auto;
+	width: 90%;
+	overflow: hidden;
+	display: block;
+}
+/*签署文件*/
+.sign-document-class{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	background-color: #FFFFFF;
+	border-bottom: solid 1.56vw #eeeeee;
+}
+.sign-document-class a{
+	font-size: 3.75vw;
+	line-height: 12.19vw;
+	width: 17%;
+	margin: 0 8.16%;
+	float: left;
+	display: block;
+	text-align: center;
+	color: #232323;
+}
+.sign-document-class a.sign-document-class-cur{
+	border-bottom: solid 1vw #3048dd;
+	padding-top: 1vw;
+	line-height: 10.19vw;
+}
+.sign-document-list{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin: 1.56vw auto 0 auto;
+}	
+.sign-document-list li{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	
+	margin: 0 auto 1.25vw auto;
+}
+.sign-document-list li a{
+	width: 90%;
+	overflow: hidden;
+	display: block;
+	border: solid 2px #eeeeee;
+	margin: 0 auto;
+}
+.sign-document-time{
+	width: 24%;
+	float: left;
+	display: block;
+	text-align: center;
+	font-size: 3.75vw;
+	color: #7396ff;
+	line-height: 21.33vw;
+}
+.sign-document-cont{
+	width: 66%;
+	padding: 1.56vw 4% 0 6%;
+	background: url("../images/sign-document-triangle.png") left center no-repeat #EEEEEE;
+	float: left;
+	background-size: 2.81vw;
+}
+.sign-document-title{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 2.81vw;
+	color: #232323;
+	line-height: 5.94vw;
+}
+.sign-document-tips{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 0.78vw;
+}
+.sign-document-tips span{
+	font-size: 1.88vw;
+	line-height: 3.13vw;
+	float: left;
+	display: block;
+	width: 7.81vw;
+	margin: 0 1.56vw 1.56vw 0;
+	color: #FFFFFF;
+	border-radius: 0.5vw;
+	text-align: center;
+}
+.sign-document-tips span.sign-complete{
+	background-color: #3048dd;
+}
+.sign-document-tips span.sign-progress{
+	background-color: #f19149;
+}
+.sign-document-tips span.sign-refusal{
+	background-color: #8f5656;
+}
+.sign-document-tips span.sign-my{
+	background-color: #707070;
+}
+.sign-document-date{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin-bottom: 1.56vw;
+}
+.sign-document-date span{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	font-size: 1.88vw;
+	color: #232323;
+	line-height: 3.4vw;
+}
+.refusal-reason{
+	font-size: 1.88vw;
+	color: #232323;
+	line-height: 3.4vw;
+	margin: 0.78vw 0 0.78vw 30%;
+	width: 68%;
+}
+.sign-initiate-man{
+	width: 90%;
+	margin: 0 auto;
+	padding: 4.22vw 0 3.12vw 0;
+	border-bottom: solid 1px #e5e5e5;
+	display: block;
+}
+.sign-initiate-man-name{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin-bottom: 1.56vw;
+}
+.sign-initiate-man-name img{
+	height: 4.06vw;
+	width: 4.06vw;
+	border-radius: 50%;
+	margin-right: 1.56vw;
+	float: left;
+	display: block;
+}
+.sign-initiate-man-name span{
+	float: left;
+	display: block;
+	line-height: 4.06vw;
+	font-size: 2.81vw;
+	color: #232323;
+}
+.sign-initiate-man-name m{
+	line-height: 4.06vw;
+	font-size: 1.88vw;
+	color: #232323;
+	float: right;
+}
+.sign-initiate-man-tips{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.sign-initiate-man-tips span{
+	margin-right: 1.56vw;
+	font-size: 1.88vw;
+	line-height: 3.13vw;
+	color: #3048dd;
+	border-radius: 0.5vw;
+	border: solid 1px #7093ff;
+	width: 6.88vw;
+	display: block;
+	text-align: center;
+}
+.sign-document-info{
+	width: 90%;
+	overflow: hidden;
+	display: block;
+	padding: 0 5%;
+	border-bottom: solid 1.58vw #eeeeee;
+}
+.sign-document-info-title{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	font-size: 2.81vw;
+	color: #232323;
+	line-height: 4.69vw;
+	margin: 2.5vw 0 0.78vw 0;
+}
+.sign-document-info-tips{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.sign-document-info-tips span{
+	color: #ffffff;
+	font-size: 1.88vw;
+	line-height: 3.12vw;
+	text-align: center;
+	display: block;
+	border-radius: 0.5vw;
+	width: 7.81vw;
+	float: left;
+	margin-right: 1.56vw;
+}
+.sign-document-info-tips span.sign-document-info-past{
+	background-color: #858585;
+}
+.sign-document-info-tips span.sign-document-info-wait{
+	background-color: #f6b37f;
+}
+.sign-document-info-tips span.sign-document-info-refuse{
+	background-color: #8f5656;
+}
+.sign-document-info-tips span.sign-document-info-completed{
+	background-color: #32b16c;
+}
+.sign-document-info-date{
+	font-size: 1.88vw;
+	line-height: 3.44vw;
+	width: 100%;
+	display: block;
+	margin: 2.34vw 0 6.09vw 0;
+	color: #232323;
+}
+.sign-document-step{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin: 1.56vw auto 0 auto;
+}	
+.sign-document-step li{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	
+	margin: 0 auto 1.25vw auto;
+}
+.sign-document-step li .sign-document-step-cont{
+	width: 90%;
+	overflow: hidden;
+	display: block;
+	border: solid 2px #eeeeee;
+	margin: 0 auto;
+}
+.sign-document-step-number{
+	width: 24%;
+	float: left;
+	display: block;
+}
+.sign-document-step-number span{
+	text-align: center;
+	font-size: 3.75vw;
+	color: #7396ff;
+	line-height: 7.33vw;
+	width: 7.33vw;
+	margin: 4.915vw auto;
+	border: solid 1px #7396ff;
+	border-radius: 50%;
+	display: block;
+}
+.sign-document-step-text{
+	width: 66%;
+	padding: 0 4% 0 6%;
+	background: url("../images/sign-document-triangle.png") left center no-repeat #EEEEEE;
+	float: left;
+	background-size: 2.81vw;
+}
+.sign-document-step-name{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.sign-document-step-name span{
+	font-size: 2.81vw;
+	color: #232323;
+	line-height: 5.94vw;
+	margin-right: 1.56vw;
+	float: left;
+}
+.sign-document-step-name span.sign-document-step-label{
+	line-height: 2.61vw;
+	color: #464646;
+	font-size: 1.88vw;
+	padding: 0 1.25vw;
+	border-radius: 0.5vw;
+	border: solid 0.2vw #707070;
+	margin-top: 1.45vw;
+}
+.sign-document-step-name span.sign-document-step-seal{
+	font-size: 1.88vw;
+	color: #464646;
+}
+.sign-document-step-tel{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin-bottom: 1.56vw;
+}
+.sign-document-step-tel p{
+	width: 80%;
+	overflow: hidden;
+	display: block;
+	float: left;
+}
+.sign-document-step-tel p span{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	font-size: 1.88vw;
+	color: #232323;
+	line-height: 3.4vw;
+}
+
+.sign-document-step-tel p m{
+	font-size: 1.88vw;
+	line-height: 3.13vw;
+	display: block;
+	width: 7.81vw;
+	margin: 3.13vw 1.56vw 1.56vw 0;
+	color: #FFFFFF;
+	border-radius: 0.5vw;
+	text-align: center;
+}
+.sign-document-step-tel p m.sign-document-step-nostart{
+	background-color: #858585;
+}
+.sign-document-step-tel p m.sign-document-step-wait{
+	background-color: #f6b37f;
+}
+.sign-document-step-tel p m.sign-document-step-refuse{
+	background-color: #8f5656;
+}
+.sign-document-step-tel p m.sign-document-step-completed{
+	background-color: #32b16c;
+}
+.sign-document-step-sign{
+	float: right;
+	width: 7.19vw;
+	line-height: 7.19vw;
+	text-align: center;
+	display: block;
+	font-size: 2.5vw;
+	color: #FFFFFF;
+	background-color: #7093ff;
+	border-radius: 50%;
+}
+.sign-document-step-sign:hover{
+	background-color: #5a7eef;
+}
+.swiper-container.sign-document-preview{
+	width: 84%;
+	margin: 9.38vw auto 0 auto;
+	display: block;
+}
+.sign-document-preview-cont{
+	width: 100%;
+	height: 117.19vw;
+}
+.sign-document-preview-cont img{
+	width: 84vw;
+	height: 117.19vw;
+}
+.sign-document-preview .swiper-pagination{
+	position: inherit;
+	width: 100%;
+	text-align: center;
+	display: block;
+	bottom: 0;
+	margin-bottom: 1.56vw;
+	font-size: 4.06vw;
+	line-height: 7.19vw;
+	height: 7.19vw;
+}
+/*税务文书*/
+.tax-documents-class{
+	line-height: 13.75vw;
+	height: 13.75vw;
+	width: 90%;
+	margin: 0 auto;
+}
+.tax-documents-class .swiper-slide{
+	height: 13.75vw;
+	text-align: center;
+	color: #646464;
+	font-size: 3.44vw;
+	margin-right: 0 !important;
+	width: 17.19vw !important;
+}
+.tax-documents-class .swiper-slide.swiper-slide-active{
+	font-size: 4.38vw;
+	color: #282828;
+	background: url("../images/tax_documents_line.png") center 8.14vw no-repeat;
+	background-size: 90% 0.62vw;
+	width: 20.31vw !important;
+}
+.tax-documents-search{
+	width: 100%;
+	padding: 0;
+	border-top: solid 1.56vw #eeeeee;
+	border-bottom: solid 1.56vw #eeeeee;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 400;
+	background-color: #FFFFFF;
+}
+.tax-documents-search input{
+	font-size: 2.81vw;
+	line-height: 9.06vw;
+	float: left;
+	width: 88%;
+	display: block;
+	background: url("../images/search_icon.png") 5vw center no-repeat;
+	background-size: 3.44vw;
+	text-indent: 10.94vw;
+}
+.tax-documents-search2{
+	width: 100%;
+	padding: 0;
+	border-top: solid 1.56vw #eeeeee;
+	border-bottom: solid 1.56vw #eeeeee;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	top: 13.75vw;
+	z-index: 400;
+	background-color: #FFFFFF;
+}
+.tax-documents-search2 input{
+	font-size: 2.81vw;
+	line-height: 9.06vw;
+	float: left;
+	width: 88%;
+	display: block;
+	background: url("../images/search_icon.png") 5vw center no-repeat;
+	background-size: 3.44vw;
+	text-indent: 10.94vw;
+}
+.tax-documents-search-btn{
+	width: 12%;
+	float: left;
+	display: block;
+	text-align: center;
+	font-size: 2.81vw;
+	line-height: 9.06vw;
+	color: #3a59bc;
+}
+.tax-documents-search-btn:hover{
+	background-color: #fafafa;
+}
+.tax-documents-banner{
+	position: fixed !important;
+	left: 0;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.search-height{
+	width: 100%;
+	display: block;
+	height: 12.18vw;
+}
+.search-height2{
+	width: 100%;
+	display: block;
+	height: 25.93vw;
+}
+.tax-documents-list{
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+.tax-documents-list.tax-documents-list-cur{
+	display: block;
+}
+.tax-documents-list li{
+	width: 100%;
+	border-bottom: solid 1px #eeeeee;
+	overflow: hidden;
+	display: block;
+}
+.tax-documents-list li a{
+	width: 90%;
+	display: block;
+	overflow: hidden;
+	font-size: 4.38vw;
+	line-height: 5.94vw;
+	padding: 3.91vw 0;
+	margin: 0 auto;
+	background: url("../images/arrow.png") right center no-repeat;
+	background-size: 1.88vw;
+	color: #282828;
+}
+.tax-documents-down{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	background-color: #eeeeee;
+	padding: 3.91vw 0 4.69vw 0;
+}
+.tax-documents-down p{
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	font-size: 3.13vw;
+	line-height: 4.69vw;
+	margin-bottom: 1.09vw;
+	color: #282828;
+}
+.tax-documents-down span{
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	font-size: 3.13vw;
+	line-height: 4.69vw;
+	color: #282828;
+}
+.tax-documents-detail{
+	width: 90%;
+	overflow: hidden;
+	display: block;
+	margin: 4.69vw auto 16.64vw auto;
+}
+.tax-documents-down-btn{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 500;
+	overflow: hidden;
+	display: block;
+	background-color: #f7f7f7;
+	width: 100%;
+}
+.tax-documents-down-btn a{
+	width: 82%;
+	margin: 3.13vw auto;
+	display: block;
+	text-align: center;
+	background-color: #7093ff;
+	font-size: 3.75vw;
+	line-height: 9.38vw;
+	color: #FFFFFF;
+}
+.tax-documents-down-btn a:hover{
+	background-color: #6286f3;
+}
+.institutional-settings{
+	width: 100%;
+	overflow: hidden !important;
+	display: block;
+	margin-bottom: 6.25vw;
+	height: auto !important;
+}
+.institutional-settings li{
+	width: 100%;
+/*	overflow: hidden;*/
+	display: block;
+	border-bottom: solid 2px #f7f7f7;
+	font-size: 4.06vw;
+	line-height: 13.44vw;
+}
+.institutional-settings li .institutional-settings-a{
+	width: 90%;
+	padding-right: 4%;
+	margin: 0 auto;
+	display: block;
+	color: #000000;
+	background: url("../images/arrow.png") right center no-repeat;
+	background-size: 3.13vw;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/*
+.institutional-settings li .institutional-settings-a.institutional-settings-cur{
+	background: url("../images/arrow_up.png") right center no-repeat;
+	background-size: 3.13vw;
+}
+*/
+.institutional-settings-list{
+	width: 100%;
+	display: none;
+	overflow: hidden;
+	background-color: #f7f7f7;
+}
+.institutional-settings-list a{
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	padding: 0 7% 0 3%;
+	background: url("../images/arrow.png") 95.12vw center no-repeat;
+	background-size: 1.88vw;
+	border-top: solid 2px #fff;
+	color: #282828;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.institutional-settings-list.institutional-settings-list-cur{
+	display: block;
+}
+.institutional-hierarchy{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	font-size: 4.06vw;
+	line-height: 13.44vw;
+	border-bottom: solid 2px #f7f7f7;
+	zoom:1;
+	position: fixed;
+	left: 0;
+	top: 12.18vw;
+}
+.institutional-hierarchy p{
+	margin-right: 40%;
+	overflow: hidden;
+	display: block;
+	width: 1000%;
+	float: right;
+}
+.institutional-hierarchy p a{
+	display: block;
+	float: right;
+	color: #1ca4fe;
+	padding: 0 6.56vw 0 4.38vw;
+	background: url("../images/arrow.png") right center no-repeat;
+	background-size: 1.88vw;
+}
+.institutional-hierarchy p span{
+	display: block;
+	float: right;
+	color: #000000;
+	padding: 0 6.56vw 0 4.38vw;
+}
+.search-height3{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	height: 25.62vw;
+}
+.institutional-man{
+	width: 100%;
+	overflow: hidden !important;
+	display: block;
+	height: auto !important;
+	margin-bottom: 19.64vw;
+}
+.institutional-man li{
+	width: 100%;
+	margin-bottom: 2px;
+	background-color: #f7f7f7;
+	overflow: hidden;
+	display: block;
+}
+.institutional-man li a{
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	background: url("../images/arrow.png") right center no-repeat;
+	background-size: 1.88vw;
+	padding: 2.34vw 0;
+	overflow: hidden;
+}
+.institutional-man li a img{
+	height: 7.81vw;
+	width: 7.81vw;
+	border-radius: 50%;
+	float: left;
+	margin-right: 3.13vw;
+}
+.institutional-man-info{
+	width: 83%;
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+.institutional-man-info p{
+	font-size: 2.81vw;
+	line-height: 4.38vw;
+	color: #232323;
+}
+.institutional-man-info p m{
+	font-size: 1.88vw;
+	margin-left: 1.56vw;
+}
+.institutional-man-info span{
+	font-size: 1.88vw;
+	line-height: 3.44vw;
+	display: block;
+	color: #232323;
+}
+.institutional-man-cont{
+	width: 84%;
+	margin: 0 auto;
+	padding: 4.69vw 8%;
+	overflow: hidden;
+	display: block;
+	border-bottom: solid 1.56vw #eeeeee;
+}
+.institutional-man-cont img{
+	width: 19vw;
+	margin-right: 4.7vw;
+	float: left;
+	height: 19vw;
+	border-radius: 50%;
+}
+.institutional-man-cont p{
+	width: 60.2vw;
+	float: left;
+	margin-top: 1.56vw;
+}
+.institutional-man-cont p span{
+	width: 100%;
+	display: block;
+	color: #007aff;
+	font-size: 4.69vw;
+	line-height: 6.25vw;
+}
+.institutional-man-cont p m{
+	width: 100%;
+	display: block;
+	color: #282828;
+	font-size: 3.44vw;
+	line-height: 5vw;
+}
+.institutional-man-cont-list{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.institutional-man-cont-list li{
+	border-bottom: solid 1px #eeeeee;
+	width: 90%;
+	padding: 2.34vw 5%;
+	overflow: hidden;
+	display: block;
+}
+.institutional-man-cont-list li p{
+	width: 100%;
+	display: block;
+	font-size: 2.81vw;
+	line-height: 4.38vw;
+	margin-bottom: 1.56vw;
+	color: #646464
+}
+.institutional-man-cont-list li span{
+	width: 100%;
+	display: block;
+	font-size: 3.75vw;
+	line-height: 5.31vw;
+	color: #282828;
+}
+/*个人中心*/
+.personal-info{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	background: url("../images/login-bg.png") center top no-repeat;
+	background-size: 100%;
+	height: 48vw;
+}
+.personal-info img{
+	width: 15.63vw;
+	margin: 10.31vw auto 3.13vw auto;
+	display: block;
+	height: 15.63vw;
+	border-radius: 50%;
+}
+.personal-info p{
+	color: #424242;
+	font-size: 4.69vw;
+	line-height: 6.25vw;
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+.personal-info span{
+	color: #676767;
+	font-size: 3.75vw;
+	line-height: 5.31vw;
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+.personal-list{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin-top: 7.81vw;
+}
+.personal-list li{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	border-bottom: solid 0.31vw #e5e5e5;
+}
+.personal-list li a{
+	width: 90%;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto;
+	padding: 4.69vw 0;
+	background: url("../images/arrow.png") right center no-repeat;
+	background-size: 1.88vw;
+}
+.personal-list li a img{
+	width: 3.13vw;
+	display: block;
+	float: left;
+	margin-right: 1.56vw;
+}
+.personal-list li a span{
+	font-size: 2.81vw;
+	line-height: 3.75vw;
+	color: #292929;
+	float: left;
+	display: block;
+}
+.login-out{
+	width: 82%;
+	display: block;
+	margin: 15.63vw auto 3.13vw auto;
+	text-align: center;
+	font-size: 4.69vw;
+	line-height: 9.38vw;
+	color: #FFFFFF;
+	background-color: #7093ff;
+}
+.login-out:hover{
+	background-color: #6286f3;
+}
+.password-list{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto;
+	border-top: solid 1.56vw #EEEEEE;
+}
+.password-list input{
+	width: 90%;
+	padding: 0 5%;
+	border-bottom: solid 0.31vw #EEEEEE;
+	font-size: 3.75vw;
+	line-height: 12.5vw;
+}
+.spring-window{
+	width: 100%;
+	overflow: hidden;
+	display: none;
+	height: 100%;
+	z-index: 600;
+	background-color: rgba(0,0,0,0.78);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.win-box{
+	width: 72%;
+	position: absolute;
+	left: 14%;
+	top: 50%;
+	background-color: #FFFFFF;
+	margin-top: -17.27vw;
+}
+.win-box p{
+	color: #475ff0;
+	font-size: 4.69vw;
+	line-height: 6.25vw;
+	width: 90%;
+	margin: 8.59vw auto 10.16vw auto;
+	display: block;
+	text-align: center;
+}
+.win-box span{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.win-btn-cancle{
+	width: 35.64vw;
+	border-right: solid 0.16vw #7093ff;
+	border-top: solid 0.16vw #7093ff;
+	float: left;
+	display: block;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #7093ff;
+	font-size: 3.75vw;
+	line-height: 9.38vw;
+}
+.win-btn-cancle:hover{
+	background-color: #6286f3;
+}
+.win-btn-sure{
+	width: 36vw;
+	border-top: solid 0.16vw #7093ff;
+	color: #7093ff;
+	text-align: center;
+	display: block;
+	text-align: center;
+	float: left;
+	font-size: 3.75vw;
+	line-height: 9.38vw;
+}
+.win-btn-sure:hover{
+	background-color: #fafafa;
+}
+.no-seal{
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+.no-seal.seal-cur{
+	display: block;
+}
+.no-seal img{
+	width: 46%;
+	display: block;
+	margin: 20.31vw auto 3.13vw auto;
+}
+.no-seal p{
+	width: 100%;
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-size: 3.75vw;
+	line-height: 5.31vw;
+	color: #9c9c9c;
+}
+.seal-list{
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+.seal-list.seal-cur{
+	display: block;
+}
+.seal-list li{
+	width: 90%;
+	margin: 3.13vw auto 0 auto;
+	display: block;
+	border: solid 0.16px #eeeeee;
+	background-color: #FFFFFF;
+}
+.seal-list li img{
+	width: 21.88vw;
+	display: block;
+	margin: 3.13vw auto;
+}
+.seal-list li p{
+	font-size: 2.81vw;
+	color: #292929;
+	line-height: 4.38vw;
+	width: 90%;
+	display: block;
+	text-align: center;
+	margin: 0 auto 1.56vw auto;
+}
+.no-signature{
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+.no-signature.signature-cur{
+	display: block;
+}
+.no-signature img{
+	width: 46%;
+	display: block;
+	margin: 20.31vw auto 3.13vw auto;
+}
+.no-signature p{
+	width: 100%;
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-size: 3.75vw;
+	line-height: 5.31vw;
+	color: #9c9c9c;
+}
+.signature-list{
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+.signature-list.signature-cur{
+	display: block;
+}
+.signature-list li{
+	width: 90%;
+	margin: 3.13vw auto 0 auto;
+	display: block;
+	border: solid 0.16px #eeeeee;
+	background-color: #FFFFFF;
+}
+.signature-list li .sign-img{
+	width: 50vw;
+	display: block;
+	margin: 3.13vw auto;
+}
+.signature-list li p{
+	width: 100%;
+	overflow: hidden;
+	border-top: solid 1px #eeeeee;
+}
+.signature-edit{
+	width: 44.92vw;
+	float: left;
+	display: block;
+	border-right: solid 0.16px #eeeeee;
+	text-align: center;
+	overflow: hidden;
+}
+.signature-edit img{
+	width: 3.13vw;
+	display: inline-block;
+	vertical-align: middle;
+}
+.signature-edit span{
+	color: #3e3e3e;
+	font-size: 2.81vw;
+	line-height: 9.38vw;
+	display: inline-block;
+	vertical-align: middle;
+}
+.signature-delete{
+	width: 44.7vw;
+	float: left;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+}
+.signature-delete img{
+	width: 3.13vw;
+	display: inline-block;
+	vertical-align: middle;
+}
+.signature-delete span{
+	color: #3e3e3e;
+	font-size: 2.81vw;
+	line-height: 9.38vw;
+	display: inline-block;
+	vertical-align: middle;
+}
+.sign-my{
+	position: fixed;
+	right: 1.56vw;
+	bottom: 7.69vw;
+	width: 12.5vw;
+	height: 12.5vw;
+	overflow: hidden;
+	display: block;
+}
+.sign-my img{
+	width: 100%;
+	display: block;
+}
+.canvasDiv{
+/*
+	transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+*/
+	position: fixed;
+	overflow: hidden;
+}
+#editing_area{
+	background: url("../images/sign_bg.png") center center no-repeat;
+	background-size:52.19vw; 
+}
+.btnDiv{
+	padding: 2.34vw 0;
+	overflow: hidden;
+	display: block;
+	background-color: #FFFFFF;
+	width: 100%;
+}
+#sign_clear{
+	width: 9.06vw;
+	display: block;
+	overflow: hidden;
+	margin-left: 15.63vw;
+	float: left;
+}
+#sign_clear img{
+	width: 100%;
+	display: block;
+}
+#sign_ok{
+	width: 9.06vw;
+	display: block;
+	overflow: hidden;
+	margin-right: 15.63vw;
+	float: right;
+}
+#sign_ok img{
+	width: 100%;
+	display: block;
+}
+.imgDiv{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 300px;
+	height: 60px;
+	display: none;
+}
+/*开始签署*/
+.signing-info{
+	width: 90%;
+	padding: 3.13vw 5%;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto;
+	border-bottom: solid 1.56vw #eeeeee;
+}
+.signing-info img{
+	width: 28.13vw;
+	height: 31.25vw;
+	display: block;
+	float: left;
+	margin-right: 8%;
+	border: solid 0.31vw #7093ff;
+}
+.signing-cont{
+	width: 58%;
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+.signing-cont-title{
+	font-size: 3.75vw;
+	line-height: 5.31vw;
+	width: 100%;
+	display: block;
+	color: #232323;
+	margin-top: 2.34vw;
+}
+.signing-cont-tips{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin: 0.78vw auto;
+}
+.signing-cont-tips span{
+	font-size: 2.19vw;
+	line-height: 3.13vw;
+	color: #3048dd;
+	border: solid 1px #3048dd;
+	border-radius: 0.5vw;
+	width: 6.88vw;
+	text-align: center;
+	display: block;
+	margin-right: 1.56vw;
+	margin-bottom: 1.56vw;
+}
+.signing-cont-text{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.signing-cont-text span{
+	font-size: 2.5vw;
+	color: #232323;
+	line-height: 4.06vw;
+	display: block;
+	width: 100%;
+}
+.signing-list{
+	width: 90%;
+	padding: 0 5%;
+	border-bottom: solid 1px #EEEEEE;
+	overflow: hidden;
+	display: block;
+	font-size: 2.81vw;
+	line-height: 12.5vw;
+	color: #232323;
+}
+.signing-list span{
+	float: left;
+}
+.signing-list .signing-list-date{
+	float: right;
+	width: 70%;
+	font-size: 2.81vw;
+	line-height: 12.5vw;
+	height: 12.5vw;
+	text-align: right;
+	padding-right: 5%;
+	background: url("../images/arrow.png") right center no-repeat;
+	background-size: 1.88vw;
+}
+.circulation{
+	width: 70%;
+	float: right;
+	overflow: hidden;
+	display: block;
+	text-align: right;
+}
+.circulation a{
+	display: inline-block;
+	vertical-align: middle;
+	background: url("../images/choose_no.png") center center no-repeat;
+	background-size: 3.13vw;
+	width: 6.25vw;
+	height: 6.25vw;
+}
+.circulation a.circulation-cur{
+	background: url("../images/choose_yes.png") center center no-repeat;
+	background-size: 3.13vw;
+}
+.circulation m{
+	display: inline-block;
+	vertical-align: middle;
+	width: 6.25vw;
+	margin-right: 6.25vw;
+}
+.signing-choose{
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+.signing-choose.signing-choose-cur{
+	display: block;
+}
+.signing-list-a{
+	width: 85%;
+	padding: 0 10% 0 5%; 
+	border-bottom: solid 1px #EEEEEE;
+	overflow: hidden;
+	display: block;
+	font-size: 2.81vw;
+	line-height: 12.5vw;
+	color: #232323;
+	background: url("../images/arrow.png") 93vw center no-repeat;
+	background-size: 1.88vw;
+}
+.signing-list-a span{
+	float: left;
+}
+.signing-list-a m{
+	float: right;
+}
+.stamp{
+	width: 70%;
+	float: right;
+	overflow: hidden;
+	display: block;
+	text-align: right;
+}
+.stamp a{
+	display: inline-block;
+	vertical-align: middle;
+	background: url("../images/choose_no.png") center center no-repeat;
+	background-size: 3.13vw;
+	width: 6.25vw;
+	height: 6.25vw;
+}
+.stamp a.stamp-cur{
+	background: url("../images/choose_yes.png") center center no-repeat;
+	background-size: 3.13vw;
+}
+.stamp m{
+	display: inline-block;
+	vertical-align: middle;
+	width: 6.25vw;
+	margin-right: 6.25vw;
+}
+.signing-list-b{
+	width: 85%;
+	padding: 0 10% 0 5%; 
+	border-bottom: solid 1px #EEEEEE;
+	overflow: hidden;
+	display: none;
+	font-size: 2.81vw;
+	line-height: 12.5vw;
+	color: #232323;
+	background: url("../images/arrow.png") 93vw center no-repeat;
+	background-size: 1.88vw;
+}
+.signing-list-b span{
+	float: left;
+}
+.signing-list-b m{
+	float: right;
+}
+.signing-step-title{
+	width: 90%;
+	padding: 0 5%;
+	font-size: 2.81vw;
+	line-height: 12.5vw;
+	margin-bottom: 3.13vw;
+	border-bottom: solid 1px #EEEEEE;
+	display: block;
+	overflow: hidden;
+	border-top: solid 1.56vw #EEEEEE;
+}
+.signing-list-name{
+	float: right;
+	width: 70%;
+	font-size: 2.81vw;
+	line-height: 12.5vw;
+	text-align: right;
+}
+.sign-document-step{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin: 1.56vw auto 0 auto;
+}	
+.signing-step-list{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.signing-step-list li{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto 1.88vw auto;
+}
+.signing-step-list li .signing-step-cont{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	border-top: solid 1px #eeeeee;
+	border-bottom: solid 1px #eeeeee;
+	margin: 0 auto;
+}
+.signing-step-number{
+	width: 30%;
+	float: left;
+	display: block;
+}
+.signing-step-number span{
+	text-align: center;
+	font-size: 3.75vw;
+	color: #7396ff;
+	line-height: 7.17vw;
+	width: 7.17vw;
+	margin: 3.485vw auto;
+	border: solid 0.16px #7396ff;
+	border-radius: 50%;
+	display: block;
+}
+.signing-step-text{
+	width: 60%;
+	padding: 0 4% 0 6%;
+	background: url("../images/sign-document-triangle.png") left center no-repeat #EEEEEE;
+	float: left;
+	height: 14.3vw;
+	background-size: 2.81vw;
+}
+.signing-step-text2{
+	width: 40%;
+	padding: 0 4% 0 6%;
+	background: url("../images/sign-document-triangle.png") left center no-repeat #EEEEEE;
+	float: left;
+	height: 14.3vw;
+	background-size: 2.81vw;
+}
+.signing-step-name{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.signing-step-name span{
+	font-size: 2.81vw;
+	color: #232323;
+	line-height: 5.94vw;
+	margin-right: 1.56vw;
+	float: left;
+}
+.signing-step-name span.signing-step-label{
+	line-height: 2.61vw;
+	color: #464646;
+	font-size: 1.88vw;
+	padding: 0 1.25vw;
+	border-radius: 0.5vw;
+	border: solid 0.2vw #707070;
+	margin-top: 1.45vw;
+}
+.signing-step-name span.signing-step-seal{
+	font-size: 1.88vw;
+	color: #464646;
+}
+.signing-step-tel{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin-bottom: 1.56vw;
+}
+.signing-step-tel p{
+	width: 80%;
+	overflow: hidden;
+	display: block;
+	float: left;
+}
+.signing-step-tel p span{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	font-size: 1.88vw;
+	color: #232323;
+	line-height: 3.4vw;
+}
+.signing-step-sign-btn{
+	width: 20%;
+	float: left;
+	background-color: #EEEEEE;
+	padding: 3.555vw 0;
+}
+.signing-step-sign-edit{
+	float: left;
+	width: 7.19vw;
+	line-height: 7.19vw;
+	text-align: center;
+	display: block;
+	font-size: 2.5vw;
+	color: #3b3b3b;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	margin-right: 10%;
+}
+.signing-step-sign-delete{
+	background-color: #5a7eef;
+	color: #FFFFFF;
+	float: left;
+	width: 7.19vw;
+	line-height: 7.19vw;
+	text-align: center;
+	display: block;
+	font-size: 2.5vw;
+	border-radius: 50%;
+	margin-right: 10%;
+}
+.signing-step-add{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	border-top: solid 1px #eeeeee;
+	border-bottom: solid 1px #eeeeee;
+}
+.signing-step-man{
+	font-size: 2.81vw;
+	line-height: 14.3vw;
+	width: 100%;
+	display: block;
+	color: #555555;
+}
+.signing-step-add .signing-step-cont .signing-step-number span{
+	border: solid 0.16px #c8c8c8;
+	background: url("../images/signing_step_add.png") center center no-repeat;
+	background-size: 2.81vw;
+}
+.template-list{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.template-list li{
+	width: 100%;
+	border-bottom: solid 1px #eeeeee;
+	overflow: hidden;
+	display: block;
+}
+.template-list li a{
+	width: 90%;
+	display: block;
+	overflow: hidden;
+	font-size: 2.81vw;
+	line-height: 5.94vw;
+	padding: 3.91vw 0;
+	margin: 0 auto;
+	background: url("../images/arrow.png") right center no-repeat;
+	background-size: 1.88vw;
+	color: #282828;
+}
+.signing-step-list2{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin-bottom: 16.64vw;
+}
+.signing-step-list2 li{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto 1.88vw auto;
+}
+.signing-step-list2 li .signing-step-cont2{
+	width: 90%;
+	overflow: hidden;
+	display: block;
+	border: solid 1px #eeeeee;
+	margin: 0 auto;
+}
+.signing-step-number2{
+	width: 30%;
+	float: left;
+	display: block;
+}
+.signing-step-number2 span{
+	text-align: center;
+	font-size: 3.75vw;
+	color: #7396ff;
+	line-height: 7.17vw;
+	width: 7.17vw;
+	margin: 5.765vw auto;
+	border: solid 0.16px #7396ff;
+	border-radius: 50%;
+	display: block;
+}
+.signing-step-text3{
+	width: 60%;
+	padding: 3.9vw 4% 3.9vw 6%;
+	background: url("../images/sign-document-triangle.png") left center no-repeat #EEEEEE;
+	float: left;
+	background-size: 2.81vw;
+}
+.signing-step-name2{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.signing-step-name2 span{
+	font-size: 2.81vw;
+	color: #232323;
+	line-height: 5.94vw;
+	margin-right: 1.56vw;
+	float: left;
+}
+.signing-step-name2 span.signing-step-label2{
+	line-height: 2.61vw;
+	color: #FFFFFF;
+	font-size: 1.88vw;
+	padding: 0 1.25vw;
+	border-radius: 0.5vw;
+	background-color: #7093ff;
+	margin-top: 1.9vw;
+}
+.signing-step-name2 span.signing-step-seal2{
+	color: #FFFFFF;
+	background-color: #c56666;
+	margin-top: 1.9vw;
+	font-size: 1.88vw;
+	padding: 0 1.25vw;
+	border-radius: 0.5vw;
+	line-height: 2.61vw;
+}
+.signing-step-name2 m{
+	font-size: 1.88vw;
+	color: #232323;
+	line-height: 5.94vw;
+	float: left;
+	margin-top: 0.6vw;
+}
+.signing-step-tel2{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin-bottom: 1.56vw;
+}
+.signing-step-tel2 p{
+	width: 80%;
+	overflow: hidden;
+	display: block;
+	float: left;
+}
+.signing-step-tel2 p span{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	font-size: 1.88vw;
+	color: #232323;
+	line-height: 3.4vw;
+}
+.template-detail-title{
+	font-size: 3.75vw;
+	line-height: 5.31vw;
+	color: #232323;
+	font-weight: bold;
+	padding: 3.90vw 5%;
+	width: 90%;
+	text-align: center;
+	display: block;
+	border-top: solid 1.56vw #eeeeee;
+	border-bottom: solid 1.56vw #eeeeee;
+	margin-bottom: 2.34vw;
+}
+.seal-list2{
+	width: 100%;
+	overflow: scroll;
+	overflow-x: inherit;
+	overflow-y: auto;
+	display: block;
+	margin-bottom: 16.64vw !important;
+}
+.seal-list2 li{
+	width: 90%;
+	margin: 3.13vw auto 0 auto;
+	display: block;
+	border: solid 0.16px #eeeeee;
+	background-color: #FFFFFF;
+}
+.seal-list2 li.seal-list2-cur{
+	border: solid 0.16px #a1b4f1;
+}
+.seal-list2 li img{
+	width: 21.88vw;
+	display: block;
+	margin: 3.13vw auto;
+}
+.seal-list2 li p{
+	font-size: 2.81vw;
+	color: #292929;
+	line-height: 4.38vw;
+	width: 90%;
+	display: block;
+	text-align: center;
+	margin: 0 auto 1.56vw auto;
+}
+.signature-class{
+	width: 80%;
+	overflow: hidden;
+	display: block;
+	background-color: #FFFFFF;
+	position: fixed;
+	padding: 0 10%;
+	left: 0;
+	top: 0;
+}
+.signature-class a{
+	font-size: 3.75vw;
+	line-height: 13.75vw;
+	width: 18%;
+	margin: 0 16%;
+	float: left;
+	display: block;
+	text-align: center;
+	color: #232323;
+}
+.signature-class a.signature-class-cur{
+	border-bottom: solid 1vw #3048dd;
+	padding-top: 1vw;
+	line-height: 11.75vw;
+}
+.sure-btn-height{
+	height: 16.64vw;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.institutional-man-info2{
+	width: 74%;
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+.institutional-man-info2 p{
+	font-size: 2.81vw;
+	line-height: 4.38vw;
+	color: #232323;
+}
+.institutional-man-info2 p m{
+	font-size: 1.88vw;
+	margin-left: 1.56vw;
+}
+.institutional-man-info2 span{
+	font-size: 1.88vw;
+	line-height: 3.44vw;
+	display: block;
+	color: #232323;
+}
+.signature-choose{
+	width: 9%;
+	float: left;
+	display: block;
+	overflow: hidden;
+	background: url("../images/signature_choose.png") left center no-repeat;
+	background-size: 4.69vw;
+	height: 7.82vw;
+}
+.signature-choose.signature-choose-cur{
+	background: url("../images/signature_choose_a.png") left center no-repeat;
+	background-size: 4.69vw;
+}
+.background-none{
+	background: none !important;
+}
+.institutional-hierarchy2{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	font-size: 4.06vw;
+	line-height: 13.44vw;
+	border-bottom: solid 2px #f7f7f7;
+	zoom:1;
+	position: fixed;
+	left: 0;
+	top: 25.3vw;
+	background-color: #fff;
+	z-index: 400;
+}
+.institutional-hierarchy2 p{
+	margin-right: 40%;
+	overflow: hidden;
+	display: block;
+	width: 1000%;
+	float: right;
+}
+.institutional-hierarchy2 p a{
+	display: block;
+	float: right;
+	color: #1ca4fe;
+	padding: 0 6.56vw 0 4.38vw;
+	background: url("../images/arrow.png") right center no-repeat;
+	background-size: 1.88vw;
+}
+.institutional-hierarchy2 p a:nth-child(1){
+	background: none;
+}
+.institutional-hierarchy2 p span{
+	display: block;
+	float: right;
+	color: #000000;
+	padding: 0 6.56vw 0 4.38vw;
+}
+.search-height4{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	height: 39.37vw;
+}
+/*签字印章*/
+.pinch-zoom, .pinch-zoom img {
+    width: 100%;
+    -webkit-user-drag: none;
+}
+.page {
+    margin: 10.63vw auto 0 auto;
+    position: relative;
+    text-align: center;
+    width: 85.94vw;
+	overflow: hidden;
+	height: 138.44vw;
+}
+.pinch-zoom {
+    position: relative;
+}
+.swiper-container.sign-now{
+	width: 85.94vw;
+	height: 140vw;
+	margin: 0 auto 0 auto;
+	display: block;
+	position: relative;
+}
+.sign-now-cont{
+	width: 85.94vw !important;
+	height: 120.31vw !important;
+}
+.sign-now-cont img.pinch-img{
+	width: 85.94vw;
+	height: 120.31vw;
+}
+
+.sign-refuse{
+	position: absolute;
+	left: 2.81vw;
+	bottom: 2.81vw;
+	width: 12.5vw;
+	line-height: 12.5vw;
+	display: block;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #eee;
+	color: #282828;
+	border: solid 1px #eee;
+	z-index: 400;
+	font-size: 3.75vw;
+}
+.sign-refuse:hover{
+	background-color: #fafafa;
+}
+.sign-accept{
+	position: absolute;
+	right: 2.81vw;
+	bottom: 2.81vw;
+	width: 12.5vw;
+	line-height: 12.5vw;
+	display: block;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #3048dd;
+	border: solid 1px #3048dd;
+	color: #FFFFFF;
+	z-index: 400;
+	font-size: 3.75vw;
+}
+.sign-accept:hover{
+	background-color: #253cc9;
+}
+.immediately-cont{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: scroll;
+	overflow-y: inherit;
+	overflow-x: auto;
+	display: block;
+	background-color: #eeeeee;
+	text-align: center;
+	padding: 1.56vw 0;
+	z-index: 500;
+}
+.immediately-img{
+	width: 32vw;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.immediately-img p{
+	width: 23.44vw;
+	border: solid 0.15vw #bfbfbf;
+	border-radius: 0.78vw;
+	padding: 1.56vw 0;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+.immediately-img img{
+	height: 6.25vw;
+	display: block;
+	max-width: 20vw;
+	margin: 0 auto;
+}
+.immediately-img span{
+	color: #2b2b2b;
+	font-size: 2.81vw;
+	line-height: 4.38vw;
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin: 1.56vw auto 0 auto;
+}
+.immediately-img2{
+	width: 32vw;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+}
+.immediately-img2 p{
+	width: 23.44vw;
+	border: solid 0.15vw #bfbfbf;
+	border-radius: 0.78vw;
+	padding: 1.56vw 0;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+.immediately-img2 img{
+	height: 6.25vw;
+	display: block;
+	max-width: 20vw;
+	margin: 0 auto;
+}
+.immediately-height{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	height: 12.49vw;
+}
+.immediately-height2{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	height: 18.43vw;
+}
+.reason-refusal{
+	width: 82%;
+	margin: 4.69vw auto 0 auto;
+	display: block;
+	padding: 3.91vw;
+	height: 29.69vw;
+	background-color: #eeeeee;
+	color: #282828;
+	font-size: 3.75vw;
+	line-height: 5.31vw;
+}
+.z_container {
+	width: 94.5%;
+	overflow: hidden;
+	display: block;
+	margin: 4.69vw auto
+}
+
+.z_photo {
+	width: 100%;
+	overflow: hidden;
+}
+
+.z_addImg {
+	float: left;
+	margin: 0 1.56vw 3.125vw 1.56vw;
+	display: block;
+	width: 28.125vw;
+}
+.z_addImg img{
+	width: 28.125vw;
+	height: 37.5vw;
+}
+.z_input{
+	float: left;
+}
+.z_file {
+	width: 94.5%;
+	overflow: hidden;
+	display: block;
+	margin: 4.69vw auto;
+	position: relative;
+}
+.webuploader-pick{
+	color: #5e5e5e !important;
+	background: none !important;
+}
+#filePicker{
+	width: 28.125vw !important;
+	height: 37.5vw;
+	float: left;
+	margin: 0 1.56vw 3.125vw 1.56vw;
+	border: solid 0.15vw #eeeeee;
+}
+.uploader-list{
+	float: left;
+	overflow: hidden;
+}
+.z_file span{
+	font-size: 3.75vw;
+	width: 100% !important;
+	color: #5e5e5e;
+	display: block !important;
+	text-align: center;
+	line-height: 37.2vw;
+	height: 37.2vw;
+	padding: 0 !important;
+}
+.file-item{
+	width: 27.825vw;
+	height: 37.2vw;
+	float: left;
+	margin: 0 1.56vw 3.125vw 1.56vw;
+}
+.file-item img{
+	width: 27.825vw;
+	height: 37.2vw;
+}
+.z_file input {
+	width: 28.125vw;
+	height: 37.5vw;
+	border: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	outline: 0;
+	opacity: 0;
+}
+.webuploader-pick{
+	width: 100% !important;
+	overflow: hidden;
+	padding: 0 !important;
+}
+.sign-now-img{
+	position: absolute;
+	left: 40%;
+	top: 40%;
+	padding: 6.88vw 4.38vw 0 6.88vw;
+	display: block;
+	width: 20vw;
+}
+.sign-now-img p{
+	width: 20vw;
+}
+.sign-now-img.sign-now-img-cur p{
+	border: solid 1px #5894f7;
+}
+.sign-now-img p .sign-imgs{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.sign-img-close{
+	position: absolute;
+	width: 6.88vw;
+	height: 6.88vw;
+	display: block;
+	left:0;
+	top: 0;
+	background: url("../images/sign-img-cancle.png") center center no-repeat;
+	background-size: 6.88vw;
+}
+.sign-scal-zone{
+	position: absolute;
+	left: 14.69vw;
+	top: 0;
+	width: 71.25vw;
+}
+.sign-img-scall{
+	position: absolute;
+	width: 4.38vw;
+	height: 4.38vw;
+	display: block;
+	left: 11vw;
+	top: 0;
+	background: url("../images/sign-img-la.png") center center no-repeat;
+	background-size: 4.38vw;
+}
+.sell_control{
+	width: 100%;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	margin: 6vw auto 0 auto;
+}
+.sign-now .swiper-pagination{
+	position: inherit;
+	width: 20%;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	bottom: 0;
+	margin-bottom: 1.56vw;
+	font-size: 4.06vw;
+	line-height: 7.19vw;
+	height: 7.19vw;
+}
+.sell_control .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    position: inherit;
+    width: 5vw;
+    height:5vw;
+    display: inline-block;
+    background: url("../images/sell_banner_left_a.png") center center no-repeat !important;
+	background-size: 5vw !important;
+	vertical-align: middle;
+	margin-top: 0;
+}
+.sell_control .swiper-button-prev, .swiper-container-rtl .swiper-button-next.swiper-button-disabled {
+    background: url("../images/sell_banner_left.png") center center no-repeat !important;
+	background-size: 5vw !important;
+}
+.sell_control .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    position: inherit;
+    top: 22px;
+    width: 5vw;
+    display: inline-block;
+    height: 5vw;
+    background: url("../images/sell_banner_right_a.png") center center no-repeat !important;
+	background-size: 5vw !important;
+	vertical-align: middle;
+	margin-top: 0;
+}
+.sell_control .swiper-button-next, .swiper-container-rtl .swiper-button-prev.swiper-button-disabled {
+    background: url("../images/sell_banner_right.png") center center no-repeat !important;
+	background-size: 5vw !important;
+}
+.sign-seal{
+	display:none;
+	overflow: scroll;
+	overflow-x: inherit;
+	overflow-y: auto;
+
+}
+.sign-seal.sign-seal-cur{
+	display: block;
+}
+.sign-ccanvas-img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	display: block;
+}
+.date-img{
+	position: absolute;
+	left: 40%;
+	top: 40%;
+	padding: 6.88vw 4.38vw 0 6.88vw;
+	display: block;
+	width: 20vw;
+}
+.date-img p{
+	width: 20vw;
+}
+.date-img.date-img-cur p{
+	border: solid 1px #5894f7;
+}
+.date-img p .date-imgs{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.date-img-close{
+	position: absolute;
+	width: 6.88vw;
+	height: 6.88vw;
+	display: block;
+	left:0;
+	top: 0;
+	background: url("../images/sign-img-cancle.png") center center no-repeat;
+	background-size: 6.88vw;
+}
+.date-scal-zone{
+	position: absolute;
+	left: 14.69vw;
+	top: 0;
+	width: 71.25vw;
+}
+.date-img-scall{
+	position: absolute;
+	width: 4.38vw;
+	height: 4.38vw;
+	display: block;
+	left: 11vw;
+	top: 0;
+	background: url("../images/sign-img-la.png") center center no-repeat;
+	background-size: 4.38vw;
+}
+.draggable{
+	float: left;
+}
+.draggable.is-pointer-down {
+/*  background: #09F;*/
+  z-index: 2; /* above other draggies */
+}
+.view-img-list{
+	position: fixed !important;
+	left: 0;
+	top: 0;
+	background-color: rgba(255,255,255,1.0);
+	display: none;
+	height: 100vh;
+	overflow: hidden;
+	width: 100vw;
+	z-index: 600 !important;
+}
+.view-img-list .swiper-pagination{
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: #282828;
+	font-size: 4.0625vw;
+	line-height: 8vh;
+	position: inherit;
+	bottom: inherit;
+	left: inherit;
+}
+.view-img-list .swiper-wrapper{
+	width: 100%;
+	height: 90vh;
+	margin-top: 8vh;
+}
+.view-del{
+	width: 100%;
+	height: 4vh;
+	display: block;
+	padding: 2vh 0;
+	background-color: #dcdcdc;
+	overflow: hidden;
+}
+.view-close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	padding: 3vh 4vw;
+	z-index: 600;
+}
+.view-close img{
+	height: 2vh;
+	display: block;
+}
+.view-list{
+	width: 100%;
+	display: block;
+	height: 80vh;
+	display: block;
+	margin-bottom: 4vh;
+}
+.view-del img{
+	height: 4vh;
+	display: block;
+	margin: 0 auto;
+}

@@ -1,0 +1,969 @@
+[ 2019-08-30T14:12:33+08:00 ] 119.119.85.203 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2019-08-30T14:12:38+08:00 ] 119.119.85.203 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `error` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `error` WHERE `error_id` = 10073 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2019-08-30T14:12:41+08:00 ] 119.119.85.203 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `model`  [ RunTime:0.0020s ]
+SQL: UPDATE `admin` SET `login_time`='1567145561',`login_ip`='119.119.85.203' WHERE `id` = 1 [ RunTime:0.5430s ]
+SQL: SHOW COLUMNS FROM `error` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `error` WHERE `error_id` = 10002 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2019-08-30T14:12:43+08:00 ] 119.119.85.203 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Index' AND `action` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = null AND `level` = 3  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:12:43+08:00 ] 119.119.85.203 /index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Index' AND `action` = 'welcome' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = null AND `level` = 3  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:12:45+08:00 ] 119.119.85.203 /index.php/Admin/seal/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Seal' AND `action` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 177 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0030s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy_pro\WWW\wqxts\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seal` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy_pro\WWW\wqxts\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `seal` ORDER BY orders desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\5337c7bbe13c98ed61d4a68b7b49d16c.php 第 39 行.
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\5337c7bbe13c98ed61d4a68b7b49d16c.php 第 39 行.
+NOTIC: [8] Undefined variable: search D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\5337c7bbe13c98ed61d4a68b7b49d16c.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:13:42+08:00 ] 119.119.85.203 /index.php/Admin/Seal/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Seal' AND `action` = 'add' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 178 AND `level` = 3  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:13:59+08:00 ] 101.91.60.107 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:14:45+08:00 ] 61.129.6.227 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `error` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `error` WHERE `error_id` = 10004 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:15:28+08:00 ] 119.119.85.203 /index.php/Admin/Seal/save/id/25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Seal' AND `action` = 'save' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 179 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `seal` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-08-30T14:15:53+08:00 ] 119.119.85.203 /index.php/Admin/Seal/save/id/25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Seal' AND `action` = 'save' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 179 AND `level` = 3  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `seal` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:18:13+08:00 ] 119.119.85.203 /index.php/Admin/users/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Users' AND `action` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 182 AND `level` = 3  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `customer` WHERE ( status=1 and usertype = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `customer` WHERE ( status=1 and usertype = 2 ) ORDER BY id LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `framework` WHERE ( id='100' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='100' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='100' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `framework` WHERE ( id='100' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='100' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 39 行.
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 39 行.
+NOTIC: [8] Undefined index: tel D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 48 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:19:56+08:00 ] 119.119.85.203 /index.php/Admin/Users/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Users' AND `action` = 'add' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 183 AND `level` = 3  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:22:48+08:00 ] 119.119.85.203 /admin/users/seal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Users' AND `action` = 'seal' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = null AND `level` = 3  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\UsersController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0020s ]
+SQL: SELECT `sid` FROM `customer` WHERE ( sid<>0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seal` WHERE ( 1 and id not in(37,35,42,30,36,43,48,45,29,33,25,38,26,27,34,41,44,39,46,49,32,40,47,24,28,31) ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `seal` WHERE ( 1 and id not in(37,35,42,30,36,43,48,45,29,33,25,38,26,27,34,41,44,39,46,49,32,40,47,24,28,31) ) ORDER BY orders desc LIMIT 0,100   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\636c53e9b9dc3e7b2e41f02316180a82.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:22:51+08:00 ] 119.119.85.203 /admin/users/choise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Users' AND `action` = 'choise' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = null AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:22:51+08:00 ] 119.119.85.203 /admin/framework/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Framework' AND `action` = 'index' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 173 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0030s ]
+SQL: SELECT `id`,node_name name,type_id pid FROM `framework`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: nums D:\phpstudy_pro\WWW\wqxts\Application\Common\Common\function.php 第 212 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:23:18+08:00 ] 119.119.85.203 /admin/users/seal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Users' AND `action` = 'seal' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = null AND `level` = 3  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\UsersController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0040s ]
+SQL: SELECT `sid` FROM `customer` WHERE ( sid<>0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seal` WHERE ( 1 and id not in(37,35,42,30,36,43,48,45,29,33,25,38,26,27,34,41,44,39,46,49,32,40,47,24,28,31) ) LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `seal` WHERE ( 1 and id not in(37,35,42,30,36,43,48,45,29,33,25,38,26,27,34,41,44,39,46,49,32,40,47,24,28,31) ) ORDER BY orders desc LIMIT 0,100   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\636c53e9b9dc3e7b2e41f02316180a82.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:24:09+08:00 ] 119.119.85.203 /index.php/Admin/users/zrrindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Users' AND `action` = 'zrrindex' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 206 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `customer` WHERE ( status=1 and usertype = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `customer` WHERE ( status=1 and usertype = 3 ) ORDER BY id LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: tel D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\f73cbc3a68802379145ae35a40f210fb.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:24:10+08:00 ] 119.119.85.203 /index.php/Admin/users/nsrindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Users' AND `action` = 'nsrindex' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 211 AND `level` = 3  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `customer` WHERE ( status=1 and usertype = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `customer` WHERE ( status=1 and usertype = 1 ) ORDER BY id LIMIT 0,15   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: tel D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\0c2881e8ae22f524f92cebb37cb9f4f1.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:24:17+08:00 ] 119.119.85.203 /index.php/Admin/sign/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Sign' AND `action` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 188 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `template` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `template` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\SignController.class.php 第 17 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\SignController.class.php 第 17 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\SignController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `template` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `template` WHERE ( status=1 ) LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\97d3a8f85234720218287ed0a1c7f6ac.php 第 39 行.
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\97d3a8f85234720218287ed0a1c7f6ac.php 第 39 行.
+NOTIC: [8] Undefined variable: search D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\97d3a8f85234720218287ed0a1c7f6ac.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:26:06+08:00 ] 119.119.85.203 /index.php/Admin/Users/save/id/342
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Users' AND `action` = 'save' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 184 AND `level` = 3  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `customer` WHERE ( id=342 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `seal` WHERE ( id='0' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:28:52+08:00 ] 119.119.85.203 /index.php/Admin/Sign/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Sign' AND `action` = 'add' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 189 AND `level` = 3  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-08-30T14:31:43+08:00 ] 119.119.85.203 /index.php/Admin/Sign/save/id/288
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Sign' AND `action` = 'save' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 190 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `template` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `template` WHERE ( id='288' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='288' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `customer` WHERE ( id='925' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `seal` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:34:11+08:00 ] 119.119.85.203 /index.php/Admin/swwscolumn/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Swwscolumn' AND `action` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 193 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swwscolumn` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( 1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 39 行.
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 39 行.
+NOTIC: [8] Undefined index: tel D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 48 行.
+NOTIC: [8] Undefined variable: count D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 85 行.
+NOTIC: [8] Undefined variable: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 86 行.
+NOTIC: [8] Undefined variable: page D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:34:12+08:00 ] 119.119.85.203 /index.php/Admin/swws/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Swws' AND `action` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 197 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swws` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `swws` WHERE ( 1 ) LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `swws` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `swws` WHERE ( 1 ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swwscolumn` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='6' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\1e815d2f6fc78b405a6d219254634115.php 第 39 行.
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\1e815d2f6fc78b405a6d219254634115.php 第 39 行.
+NOTIC: [8] Undefined index: tel D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\1e815d2f6fc78b405a6d219254634115.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-08-30T14:34:16+08:00 ] 119.119.85.203 /index.php/Admin/swwscolumn/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Swwscolumn' AND `action` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 193 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swwscolumn` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( 1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 39 行.
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 39 行.
+NOTIC: [8] Undefined index: tel D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 48 行.
+NOTIC: [8] Undefined variable: count D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 85 行.
+NOTIC: [8] Undefined variable: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 86 行.
+NOTIC: [8] Undefined variable: page D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\162b60001986f7295eee05f5c8cc78bc.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-08-30T14:35:26+08:00 ] 119.119.85.203 /index.php/Admin/Swwscolumn/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Swwscolumn' AND `action` = 'add' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 194 AND `level` = 3  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:35:33+08:00 ] 119.119.85.203 /index.php/Admin/Swwscolumn/save/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Swwscolumn' AND `action` = 'save' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 195 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swwscolumn` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:39:08+08:00 ] 119.119.85.203 /index.php/Admin/swws/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Swws' AND `action` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 197 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swws` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `swws` WHERE ( 1 ) LIMIT 1   [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `swws` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `swws` WHERE ( 1 ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swwscolumn` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `swwscolumn` WHERE ( id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\1e815d2f6fc78b405a6d219254634115.php 第 39 行.
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\1e815d2f6fc78b405a6d219254634115.php 第 39 行.
+NOTIC: [8] Undefined index: tel D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\1e815d2f6fc78b405a6d219254634115.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-30T14:39:57+08:00 ] 119.119.85.203 /index.php/Admin/Swws/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Swws' AND `action` = 'add' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 198 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swwscolumn` [ RunTime:0.0030s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy_pro\WWW\wqxts\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `swwscolumn`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:40:53+08:00 ] 119.119.85.203 /index.php/Admin/Swws/save/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Swws' AND `action` = 'save' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 199 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swwscolumn` [ RunTime:0.0030s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy_pro\WWW\wqxts\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `swwscolumn`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swws` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `swws` WHERE ( id='13' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:43:32+08:00 ] 119.119.85.203 /index.php/Admin/bullhorn/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Bullhorn' AND `action` = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 202 AND `level` = 3  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bullhorn` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bullhorn` WHERE ( 1 ) LIMIT 1   [ RunTime:0.1090s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `bullhorn` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `bullhorn` WHERE ( 1 ) ORDER BY id LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\56d7ef349c017e619313cdceea91e1f3.php 第 39 行.
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\56d7ef349c017e619313cdceea91e1f3.php 第 39 行.
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\56d7ef349c017e619313cdceea91e1f3.php 第 48 行.
+NOTIC: [8] Undefined index: pid D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\56d7ef349c017e619313cdceea91e1f3.php 第 53 行.
+NOTIC: [8] Undefined index: pid D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\56d7ef349c017e619313cdceea91e1f3.php 第 54 行.
+NOTIC: [8] Undefined index: pid D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\56d7ef349c017e619313cdceea91e1f3.php 第 55 行.
+NOTIC: [8] Undefined index: pid D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\56d7ef349c017e619313cdceea91e1f3.php 第 56 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\56d7ef349c017e619313cdceea91e1f3.php 第 87 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\56d7ef349c017e619313cdceea91e1f3.php 第 87 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\56d7ef349c017e619313cdceea91e1f3.php 第 87 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\56d7ef349c017e619313cdceea91e1f3.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2019-08-30T14:44:56+08:00 ] 119.119.85.203 /index.php/Admin/Bullhorn/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Bullhorn' AND `action` = 'add' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 203 AND `level` = 3  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-30T14:45:38+08:00 ] 119.119.85.203 /index.php/Admin/Bullhorn/save/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Bullhorn' AND `action` = 'save' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 204 AND `level` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bullhorn` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bullhorn` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: img D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\e8e63ed1b23799d699310b0a917b0810.php 第 50 行.
+NOTIC: [8] Undefined index: img D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\e8e63ed1b23799d699310b0a917b0810.php 第 52 行.
+NOTIC: [8] Undefined index: sorts D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\e8e63ed1b23799d699310b0a917b0810.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

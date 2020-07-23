@@ -1,0 +1,189 @@
+[ 2019-08-31T15:53:33+08:00 ] 127.0.0.1 /api/login/appindex/userid/488/token/53fd2d64d355348e88bd3ded71c01725
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `customer` WHERE ( id='488' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-31T15:53:38+08:00 ] 127.0.0.1 /api/netsign/mysignname/userid/488/token/53fd2d64d355348e88bd3ded71c01725
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `customer` WHERE ( id='488' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `customer` WHERE ( id='488' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-31T15:53:45+08:00 ] 127.0.0.1 /api/login/appindex/userid/488/token/53fd2d64d355348e88bd3ded71c01725
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `customer` WHERE ( id='488' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-31T15:53:48+08:00 ] 127.0.0.1 /api/netsign/index/userid/488/token/53fd2d64d355348e88bd3ded71c01725
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `customer` WHERE ( id='488' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: select * from sign as so,
+
+(select a.*,b.orders,b.uid from signson as a , templateson as b where b.uid = 488 and a.tsid = b.id and a.issign = 1 group by a.fid) as son where so.id = son.fid and so.status = 1 and so.nownode = son.orders [ RunTime:0.0040s ]
+SQL: select * from sign where status=1 and uid='488' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `senduid` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `senduid` WHERE ( receiveuid = '488' and status = '2' and isout ='2'     ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT
+	*
+FROM
+	(
+		SELECT
+			b. NAME,
+			a.id,
+			a.starttime,
+			a.endtime,
+	        a.savetime,
+	        a.status
+		FROM
+			sign AS a,
+			template AS b
+		WHERE
+			a.uid = '488'
+		AND a.mid = b.id 
+		UNION ALL
+			SELECT
+				c. NAME,
+				d.id,
+				d.starttime,
+				d.endtime,
+			    d.savetime,
+			    d.status
+			FROM
+				(
+					SELECT
+						a.*, b. NAME
+					FROM
+						(
+							SELECT
+								fid,
+								orders
+							FROM
+								templateson
+							WHERE
+								uid = '488'
+							GROUP BY
+								fid
+						) AS a,
+						template AS b
+					WHERE
+						a.fid = b.id
+				) AS c
+			, sign AS d where c.fid = d.mid 
+	) e
+GROUP BY
+	id order by savetime desc
+LIMIT 10 [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-31T15:53:52+08:00 ] 127.0.0.1 /api/login/appindex/userid/488/token/53fd2d64d355348e88bd3ded71c01725
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `customer` WHERE ( id='488' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-31T15:53:54+08:00 ] 127.0.0.1 /api/netsign/swws/userid/488/token/53fd2d64d355348e88bd3ded71c01725
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 1457 行.
+NOTIC: [8] Undefined index: pid D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 1458 行.
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 1459 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `customer` WHERE ( id='488' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `swwscolumn` [ RunTime:0.0030s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy_pro\WWW\wqxts\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `swwscolumn` ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swws` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `swws` WHERE ( pid='1' and 1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-08-31T15:53:55+08:00 ] 127.0.0.1 /api/netsign/swws/userid/488/token/53fd2d64d355348e88bd3ded71c01725/page/1/pid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 1459 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `customer` WHERE ( id='488' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `swwscolumn` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy_pro\WWW\wqxts\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `swwscolumn` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `swws` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `swws` WHERE ( pid='1' and 1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-08-31T15:53:59+08:00 ] 127.0.0.1 /api/login/appindex/userid/488/token/53fd2d64d355348e88bd3ded71c01725
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `customer` WHERE ( id='488' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-08-31T15:54:02+08:00 ] 127.0.0.1 /api/netsign/myselfinfo/userid/488/token/53fd2d64d355348e88bd3ded71c01725
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `customer` WHERE ( id='488' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `customer` WHERE ( id='488' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

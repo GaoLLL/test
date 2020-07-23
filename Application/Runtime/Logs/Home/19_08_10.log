@@ -1,0 +1,439 @@
+[ 2019-08-10T07:48:38+08:00 ] 59.44.150.186 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:13+08:00 ] 175.167.154.111 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:17+08:00 ] 175.167.154.111 /home/index/yzinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( tel='17696655319' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `customer` SET `token`='a4c7b296e9993112b1f3ea3720c85bdb' WHERE ( id='926' ) [ RunTime:0.0468s ]
+NOTIC: [8] Undefined index: sign D:\phpstudy_pro\WWW\wqxts\Application\Home\Controller\IndexController.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='28' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:25:19+08:00 ] 175.167.154.111 /home/netsign/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:22+08:00 ] 175.167.154.111 /index.php/Home/Sendsign/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:25+08:00 ] 175.167.154.111 /home/sendsign/forminfo/id/427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:27+08:00 ] 175.167.154.111 /home/sendsign/signnamesign/type/1/id/427/orders/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `imgtime` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `imgtime` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `imgtime` SET `str`='2019-08-10' WHERE ( id=1 ) [ RunTime:0.0780s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:34+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:25:42+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:25:47+08:00 ] 175.167.154.111 /home/sendsign/forminfo/id/427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:52+08:00 ] 175.167.154.111 /home/sendsign/signnamesign/type/1/id/427/orders/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `imgtime` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `imgtime` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:57+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:25:59+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:25:59+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:26:00+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:26:00+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:26:00+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:26:00+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:26:01+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:26:01+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:26:01+08:00 ] 175.167.154.111 /home/sendsign/sendsigndo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='301' and uid='926' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signson` WHERE ( fid='427' and tsid='576' ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sign` WHERE ( id='427' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( uid='926' and fid='301' and orders='2' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2019-08-10T12:26:05+08:00 ] 175.167.154.111 /home/sendsign/forminfo/id/427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+

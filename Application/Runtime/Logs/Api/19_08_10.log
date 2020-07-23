@@ -1,0 +1,171 @@
+[ 2019-08-10T12:25:19+08:00 ] 127.0.0.1 /api/login/appindex/userid/926/token/a4c7b296e9993112b1f3ea3720c85bdb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:22+08:00 ] 127.0.0.1 /api/netsign/index/userid/926/token/a4c7b296e9993112b1f3ea3720c85bdb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sign as so,
+
+(select a.*,b.orders,b.uid from signson as a , templateson as b where b.uid = 926 and a.tsid = b.id and a.issign = 1 group by a.fid) as son where so.id = son.fid and so.status = 1 and so.nownode = son.orders [ RunTime:0.0624s ]
+SQL: select * from sign where status=1 and uid='926' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `senduid` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `senduid` WHERE ( receiveuid = '926' and status = '2' and isout ='2'     ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT
+	*
+FROM
+	(
+		SELECT
+			b. NAME,
+			a.id,
+			a.starttime,
+			a.endtime,
+	        a.savetime,
+	        a.status
+		FROM
+			sign AS a,
+			template AS b
+		WHERE
+			a.uid = '926'
+		AND a.mid = b.id 
+		UNION ALL
+			SELECT
+				c. NAME,
+				d.id,
+				d.starttime,
+				d.endtime,
+			    d.savetime,
+			    d.status
+			FROM
+				(
+					SELECT
+						a.*, b. NAME
+					FROM
+						(
+							SELECT
+								fid,
+								orders
+							FROM
+								templateson
+							WHERE
+								uid = '926'
+							GROUP BY
+								fid
+						) AS a,
+						template AS b
+					WHERE
+						a.fid = b.id
+				) AS c
+			, sign AS d where c.fid = d.mid 
+	) e
+GROUP BY
+	id order by savetime desc
+LIMIT 10 [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:25+08:00 ] 127.0.0.1 /api/netsign/signinfo/userid/926/token/a4c7b296e9993112b1f3ea3720c85bdb/id/427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,c.username,c.topimage,a.starttime,a.endtime,b.name,a.status from sign as a,template as b,customer as c where a.id = '427' and a.uid= c.id and a.mid = b.id  [ RunTime:0.0000s ]
+SQL: select c.sid,a.remark,a.issign,b.uid,b.orders,b.type,c.username,c.tel from signson as a ,templateson as b ,customer as c where a.fid = '427' and a.tsid = b.id  and b.uid=c.id  order by orders asc [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `seal` WHERE ( id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='28' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:27+08:00 ] 127.0.0.1 /api/netsign/signshow/userid/926/token/a4c7b296e9993112b1f3ea3720c85bdb/id/427/type/1/orders/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:47+08:00 ] 127.0.0.1 /api/netsign/signinfo/userid/926/token/a4c7b296e9993112b1f3ea3720c85bdb/id/427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,c.username,c.topimage,a.starttime,a.endtime,b.name,a.status from sign as a,template as b,customer as c where a.id = '427' and a.uid= c.id and a.mid = b.id  [ RunTime:0.0000s ]
+SQL: select c.sid,a.remark,a.issign,b.uid,b.orders,b.type,c.username,c.tel from signson as a ,templateson as b ,customer as c where a.fid = '427' and a.tsid = b.id  and b.uid=c.id  order by orders asc [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `seal` WHERE ( id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='28' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-08-10T12:25:52+08:00 ] 127.0.0.1 /api/netsign/signshow/userid/926/token/a4c7b296e9993112b1f3ea3720c85bdb/id/427/type/1/orders/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='427' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2019-08-10T12:26:05+08:00 ] 127.0.0.1 /api/netsign/signinfo/userid/926/token/a4c7b296e9993112b1f3ea3720c85bdb/id/427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,c.username,c.topimage,a.starttime,a.endtime,b.name,a.status from sign as a,template as b,customer as c where a.id = '427' and a.uid= c.id and a.mid = b.id  [ RunTime:0.0000s ]
+SQL: select c.sid,a.remark,a.issign,b.uid,b.orders,b.type,c.username,c.tel from signson as a ,templateson as b ,customer as c where a.fid = '427' and a.tsid = b.id  and b.uid=c.id  order by orders asc [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='31' ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `seal` WHERE ( id='28' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

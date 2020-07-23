@@ -1,0 +1,55 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>首页</title>
+    <link type="text/css" rel="stylesheet" href="/files/css/main.css">
+    <script language="javascript" type="text/javascript" src="/files/js/jquery-3.3.1.js"></script>
+    <script language="javascript" type="text/javascript" src="/files/js/main.js"></script>
+</head>
+
+<body>
+<div class="index-banner">
+    <img src="/files/images/index-banner.png">
+</div>
+<?php if(($isshow) == "1"): ?><a href="<?php echo U('Netsign/wsinfo');?>" class="perfect-info">
+        <img src="/files/images/perfect-info.png">
+    </a><?php endif; ?>
+<ul class="index-class">
+    <li>
+        <a href="<?php echo U('Sendsign/index');?>">
+            <img src="/files/images/index-class-01.png">
+            <span>网签</span>
+        </a>
+    </li>
+    <li>
+        <a href="<?php echo U('Netsign/formlist');?>">
+            <img src="/files/images/index-class-02.png">
+            <span>表证单书</span>
+        </a>
+    </li>
+    <li>
+        <a href="<?php echo U('Netsign/notice');?>">
+            <img src="/files/images/index-class-03.png">
+            <span>公告通知</span>
+        </a>
+    </li>
+</ul>
+<div class="index-footer-height"></div>
+<ul class="index-footer">
+    <li>
+        <a href="<?php echo U('Netsign/index');?>" class="index-footer-cur">
+            <img src="/files/images/index-footer-icon-01-a.png">
+            <span>首页</span>
+        </a>
+    </li>
+    <li>
+        <a href="<?php echo U('Netsign/myself');?>">
+            <img src="/files/images/index-footer-icon-02.png">
+            <span>个人中心</span>
+        </a>
+    </li>
+</ul>
+</body>
+</html>
