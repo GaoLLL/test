@@ -1,0 +1,57 @@
+<include file="Index/header" />
+<form style="width:90%;text-align: center">
+    <table>
+        <tr>
+            <td align="right" height="50" width="50%"><label>所属栏目：</label></td>
+            <td align="left">
+                <select class="input-text radius" style="width:200px;height: 30px" name="pid">
+                    <volist name="list" id="vo">
+                        <option value="{$vo.id}" <eq name="info.pid" value="$vo.id" >selected</eq>  >{$vo.name}</option>
+                    </volist>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" height="50" width="50%"><label>文件名称：</label></td>
+            <td align="left"><input name="title" value="{$info.title}" class="input-text radius" placeholder="输入文件名称" style="width:200px;height: 30px"></td>
+        </tr>
+        <tr>
+            <td align="right" height="50"><label>上传路径：</label></td>
+            <td align="left">
+                <input type="hidden" name="img" id="imgs" value="{$info.img}"/>
+                <!--<a id="show" href="" target="_blank">预览</a>-->
+                <input type="text" value="{$info.img}" disabled id="shownum"/>
+                <input type="button" id="uploadButton" value="上传文件" />
+            </td>
+        </tr>
+        <input type="hidden" name="id" value="{$info.id}"/>
+    </table>
+</form>
+
+<include file="Index/foot" />
+<script>
+    KindEditor.ready(function(K) {
+        var uploadbutton = K.uploadbutton({
+            button : K('#uploadButton')[0],
+            fieldName : 'imgFile',
+            url : '/admin/base/upload',
+            afterUpload : function(data) {
+                if (data.code === 1) {
+                    K('#show').text(data.data);
+                    K('#shownum').val(data.data);
+                    K('#show').attr('href',data.data);
+                    $("#imgs").val(data.data)
+                    alert('上传成功');
+                } else {
+                    alert(data.msg);
+                }
+            },
+            afterError : function(str) {
+                alert('自定义错误信息: ' + str);
+            }
+        });
+        uploadbutton.fileBox.change(function(e) {
+            uploadbutton.submit();
+        });
+    });
+</script>

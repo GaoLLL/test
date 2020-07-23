@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>上传签署文件</title>
+    <link type="text/css" rel="stylesheet" href="/files/css/main.css">
+    <script language="javascript" type="text/javascript" src="/files/js/jquery-3.3.1.js"></script>
+    <script language="javascript" type="text/javascript" src="/files/js/main.js"></script>
+</head>
+<form enctype="multipart/form-data">
+<body>
+<div class="z_container">
+    <div class="z_photo">
+        <m class="z_input">
+
+        </m>
+        <div class="z_file">
+            <span>继续添加</span>
+            <input type="file" name="file" id="file" value="" accept="image/*" multiple="" onchange="imgChange(&#39;z_input&#39;,&#39;z_file&#39;);">
+        </div>
+    </div>
+</div>
+<div id="rq"></div>
+<a href="javascript:void(0);" class="sign-accept">发起</a>
+<div class="spring-window">
+    <div class="win-box">
+        <p>确定要删除这张图片吗？</p>
+        <span>
+				<a href="javascript:void(0)" class="win-btn-cancle z_cancel">取消</a>
+				<a href="javascript:void(0)" class="win-btn-sure z_sure">确定</a>
+			</span>
+    </div>
+</div>
+<script>
+    $(".sign-accept").click(function(){
+        console.log($('form').serialize());
+    })
+</script>
+<script type="text/javascript">
+    //px转换为rem
+    (function(doc, win) {
+        alert(123123);
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            //resizeEvt = 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth >= 640) {
+                    docEl.style.fontSize = '100px';
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                }
+            };
+        alert(resizeEvt);
+        if (!doc.addEventListener) return;
+        alert(resizeEvt);
+        //win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+
+    function imgChange(obj1, obj2) {
+        //获取点击的文本框
+        var file = document.getElementById("file");
+        //存放图片的父级元素
+        var imgContainer = document.getElementsByClassName(obj1)[0];
+        //获取的图片文件
+        var fileList = file.files;
+        //文本框的父级元素
+        var input = document.getElementsByClassName(obj2)[0];
+        var imgArr = [];
+        //遍历获取到得图片文件
+        for (var i = 0; i < fileList.length; i++) {
+
+
+
+
+            var imgUrl = window.URL.createObjectURL(file.files[i]);
+            imgArr.push(imgUrl);
+
+            var img = document.createElement("img");
+            img.setAttribute("src", imgArr[i]);
+
+
+            var str = '<input type="hidden" value="'+imgArr[i]+'" name="img[]" >';
+            $("#rq").append(str);
+
+
+
+            var imgAdd = document.createElement("div");
+            imgAdd.setAttribute("class", "z_addImg");
+            imgAdd.appendChild(img);
+            imgContainer.appendChild(imgAdd);
+        };
+        imgRemove();
+    };
+
+    function imgRemove() {
+        var imgList = document.getElementsByClassName("z_addImg");
+        var mask = document.getElementsByClassName("spring-window")[0];
+        var cancel = document.getElementsByClassName("z_cancel")[0];
+        var sure = document.getElementsByClassName("z_sure")[0];
+        for (var j = 0; j < imgList.length; j++) {
+            imgList[j].index = j;
+            imgList[j].onclick = function() {
+                var t = this;
+                mask.style.display = "block";
+                cancel.onclick = function() {
+                    mask.style.display = "none";
+                };
+                sure.onclick = function() {
+                    mask.style.display = "none";
+                    t.style.display = "none";
+                };
+
+            }
+        };
+    };
+
+</script>
+</form>
+</body>
+</html>

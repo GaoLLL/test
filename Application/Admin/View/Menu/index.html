@@ -1,0 +1,82 @@
+<include file="Index/header"/>
+<div>
+    <nav class="breadcrumb">
+        <i class="fa fa-file-text"></i> 全局菜单管理设置，修改后需要清除缓存！图标查看网址：http://fontawesome.dashgame.com
+        <volist name="ActBtns" id="btn">
+            <eq name="btn.action" value="add">
+                <a href="javascript:;" title="{$btn.name}" data-id="{$vo.id}" data-name="{$vo.username}"
+                   class="{$btn.action} message-right">
+                    <i class="fa fa-{$btn.icon}"></i>&nbsp;{$btn.name}&nbsp;
+                </a>
+            </eq>
+        </volist>
+    </nav>
+    <div class="page-container">
+        <div class="mt-20">
+            <table class="table table-border table-bordered table-bg table-hover table-sort">
+                <thead>
+                <tr class="text-c">
+                    <th width="40">序号</th>
+                    <th>类型</th>
+                    <th>验证</th>
+                    <th align="center">图标</th>
+                    <th>名称</th>
+                    <th>控制器</th>
+                    <th>方法</th>
+                    <th width="100">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <empty name="list">
+                    <tr class="text-c va-m">
+                        <td colspan="9">暂无符合条件的数据！</td>
+                    </tr>
+                    <else/>
+                    <volist name="list" id="vo" key="k">
+                        <tr class="text-c">
+                            <td width="40"><span class="label label-success radius">{$k}</span></td>
+                            <td class="text-l">
+                                <eq name="vo.level" value="1"><span class="label label-secondary radius">菜单</span></eq>
+                                <eq name="vo.level" value="2"><span class="label label-secondary radius">模型</span></eq>
+                                <eq name="vo.level" value="3"><span class="label label-secondary radius">方法</span></eq>
+                            </td>
+                            <td class="text-l">
+                                <eq name="vo.verify" value="1"><span class="label label-primary radius">是</span></eq>
+                                <eq name="vo.verify" value="2"><span class="label label-primary radius">否</span></eq>
+                            </td>
+                            <td class="text-l"><i class="fa fa-{$vo.icon}"></i></td>
+                            <empty name="vo.number">
+                                <td class="text-l">{$vo.name}</td>
+                                <td class="text-l">------</td>
+                                <td class="text-l">------</td>
+                            </empty>
+                            <eq name="vo.number" value="1">
+                                <td class="text-l">├─ ─ ─ ─ ─{$vo.name}</td>
+                                <td class="text-l">{$vo.controller}</td>
+                                <td class="text-l">{$vo.action}</td>
+                            </eq>
+                            <eq name="vo.number" value="2">
+                                <td class="text-l">├ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─{$vo.name}</td>
+                                <td class="text-l">{$vo.controller}</td>
+                                <td class="text-l">{$vo.action}</td>
+                            </eq>
+                            <td class="td-manage">
+                                <volist name="ActBtns" id="btn">
+                                    <if condition="$btn['action'] neq 'add' && $btn['action'] neq 'alldel'">
+                                        <a href="javascript:;" title="{$btn.name}" data-id="{$vo.id}"
+                                           data-name="{$vo.username}" class="{$btn.action}">
+                                            <i class="fa fa-{$btn.icon}"></i>&nbsp;
+                                        </a>
+                                    </if>
+                                </volist>
+                            </td>
+                        </tr>
+                    </volist>
+                </empty>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<include file="Index/foot"/>
+<include file="Index/listjs"/>

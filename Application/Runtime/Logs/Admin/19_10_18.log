@@ -1,0 +1,257 @@
+[ 2019-10-18T10:12:18+08:00 ] 119.119.77.185 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:12:26+08:00 ] 119.119.77.185 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model`  [ RunTime:0.0312s ]
+SQL: UPDATE `admin` SET `login_time`='1571364746',`login_ip`='119.119.77.185' WHERE `id` = 1 [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `error` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `error` WHERE `error_id` = 10002 LIMIT 1   [ RunTime:0.0156s ]
+
+[ 2019-10-18T10:12:28+08:00 ] 119.119.77.185 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Index' AND `action` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = null AND `level` = 3  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:12:28+08:00 ] 119.119.77.185 /index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Index' AND `action` = 'welcome' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = null AND `level` = 3  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:12:30+08:00 ] 119.119.77.185 /index.php/Admin/seal/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Seal' AND `action` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 177 AND `level` = 3  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy_pro\WWW\wqxts\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seal` LIMIT 1   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy_pro\WWW\wqxts\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `seal` ORDER BY orders desc LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\5337c7bbe13c98ed61d4a68b7b49d16c.php 第 39 行.
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\5337c7bbe13c98ed61d4a68b7b49d16c.php 第 39 行.
+NOTIC: [8] Undefined variable: search D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\5337c7bbe13c98ed61d4a68b7b49d16c.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2019-10-18T10:12:30+08:00 ] 119.119.77.185 /index.php/Admin/users/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Users' AND `action` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 182 AND `level` = 3  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `customer` WHERE ( status=1 and usertype = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+NOTIC: [8] Undefined index: pagesize D:\phpstudy_pro\WWW\wqxts\Application\Admin\Controller\BaseController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `customer` WHERE ( status=1 and usertype = 2 ) ORDER BY id LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='100' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='100' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='100' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='100' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='100' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 39 行.
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 39 行.
+NOTIC: [8] Undefined index: tel D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 48 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:12:37+08:00 ] 119.119.77.185 /index.php/Admin/Users/index?tel=13700045004&pagesize=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Users' AND `action` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 182 AND `level` = 3  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `customer` WHERE ( tel='13700045004' and status=1 and usertype = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( tel='13700045004' and status=1 and usertype = 2 ) ORDER BY id LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 39 行.
+NOTIC: [8] Undefined variable: vo D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 39 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Runtime\Cache\Admin\67497c3a2bf2951b752063fc54092cda.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:12:40+08:00 ] 119.119.77.185 /index.php/Admin/Users/save/id/924
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `controller` = 'Users' AND `action` = 'save' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `model` WHERE `belongid` = 184 AND `level` = 3  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id=924 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `framework` WHERE ( id='99' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

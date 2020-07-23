@@ -1,0 +1,1351 @@
+[ 2019-10-18T09:35:21+08:00 ] 127.0.0.1 /api/login/appindex/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:35:23+08:00 ] 127.0.0.1 /api/netsign/index/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sign as so,
+
+(select a.*,b.orders,b.uid from signson as a , templateson as b where b.uid = 924 and a.tsid = b.id and a.issign = 1 group by a.fid) as son where so.id = son.fid and so.status = 1 and so.nownode = son.orders [ RunTime:0.0000s ]
+SQL: select * from sign where status=1 and uid='924' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='416' and b.orders='3' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `senduid` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `senduid` WHERE ( receiveuid = '924' and status = '2' and isout ='2'     ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT
+	*
+FROM
+	(
+		SELECT
+			b. NAME,
+			a.id,
+			a.starttime,
+			a.endtime,
+	        a.savetime,
+	        a.status
+		FROM
+			sign AS a,
+			template AS b
+		WHERE
+			a.uid = '924'
+		AND a.mid = b.id 
+		UNION ALL
+			SELECT
+				c. NAME,
+				d.id,
+				d.starttime,
+				d.endtime,
+			    d.savetime,
+			    d.status
+			FROM
+				(
+					SELECT
+						a.*, b. NAME
+					FROM
+						(
+							SELECT
+								fid,
+								orders
+							FROM
+								templateson
+							WHERE
+								uid = '924'
+							GROUP BY
+								fid
+						) AS a,
+						template AS b
+					WHERE
+						a.fid = b.id
+				) AS c
+			, sign AS d where c.fid = d.mid 
+	) e
+GROUP BY
+	id order by savetime desc
+LIMIT 10 [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:35:51+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Undefined index: fid D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 303 行.
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=66 )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid=66 and status=1 )  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: udatas D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 338 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:35:51+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 425 行.
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:36:03+08:00 ] 127.0.0.1 /api/netsign/templates/userid/924/token/4e504cf24be03219a7e643062b691e50/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `template` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `template` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `template` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2019-10-18T09:38:19+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fid D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 303 行.
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=66 )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid=66 and status=1 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: udatas D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 338 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2019-10-18T09:38:19+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 425 行.
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:40:13+08:00 ] 127.0.0.1 /api/netsign/templates/userid/924/token/4e504cf24be03219a7e643062b691e50/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `template` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `template` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `template` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:42:46+08:00 ] 127.0.0.1 /api/netsign/showseal/userid/924/token/4e504cf24be03219a7e643062b691e50/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id as uid,b.* from customer as a,seal as b  where  1 and  a.sid > 0 and a.sid = b.id [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:48:51+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fid D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 303 行.
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=66 )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid=66 and status=1 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: udatas D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 338 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:48:51+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 425 行.
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:49:07+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50/fid/99/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id='99' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( pid='99' )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid='99' and status=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:49:14+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50/fid/99/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id='99' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( pid='99' )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid='99' and status=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:49:25+08:00 ] 127.0.0.1 /api/netsign/showseal/userid/924/token/4e504cf24be03219a7e643062b691e50/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id as uid,b.* from customer as a,seal as b  where  1 and  a.sid > 0 and a.sid = b.id [ RunTime:0.0312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T09:49:29+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50/id/352
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`tel`,`sid` FROM `customer` WHERE ( id='352' ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='37' ) LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:03:58+08:00 ] 127.0.0.1 /api/login/appindex/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:03:59+08:00 ] 127.0.0.1 /api/netsign/index/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sign as so,
+
+(select a.*,b.orders,b.uid from signson as a , templateson as b where b.uid = 924 and a.tsid = b.id and a.issign = 1 group by a.fid) as son where so.id = son.fid and so.status = 1 and so.nownode = son.orders [ RunTime:0.0624s ]
+SQL: select * from sign where status=1 and uid='924' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='416' and b.orders='3' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `senduid` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `senduid` WHERE ( receiveuid = '924' and status = '2' and isout ='2'     ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT
+	*
+FROM
+	(
+		SELECT
+			b. NAME,
+			a.id,
+			a.starttime,
+			a.endtime,
+	        a.savetime,
+	        a.status
+		FROM
+			sign AS a,
+			template AS b
+		WHERE
+			a.uid = '924'
+		AND a.mid = b.id 
+		UNION ALL
+			SELECT
+				c. NAME,
+				d.id,
+				d.starttime,
+				d.endtime,
+			    d.savetime,
+			    d.status
+			FROM
+				(
+					SELECT
+						a.*, b. NAME
+					FROM
+						(
+							SELECT
+								fid,
+								orders
+							FROM
+								templateson
+							WHERE
+								uid = '924'
+							GROUP BY
+								fid
+						) AS a,
+						template AS b
+					WHERE
+						a.fid = b.id
+				) AS c
+			, sign AS d where c.fid = d.mid 
+	) e
+GROUP BY
+	id order by savetime desc
+LIMIT 10 [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:04:39+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fid D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 303 行.
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=66 )  [ RunTime:0.0156s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid=66 and status=1 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: udatas D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 338 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:04:39+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 425 行.
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:04:50+08:00 ] 127.0.0.1 /api/netsign/showseal/userid/924/token/4e504cf24be03219a7e643062b691e50/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id as uid,b.* from customer as a,seal as b  where  1 and  a.sid > 0 and a.sid = b.id [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:07:27+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fid D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 303 行.
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=66 )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid=66 and status=1 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: udatas D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 338 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:07:27+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 425 行.
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:07:34+08:00 ] 127.0.0.1 /api/netsign/showseal/userid/924/token/4e504cf24be03219a7e643062b691e50/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id as uid,b.* from customer as a,seal as b  where  1 and  a.sid > 0 and a.sid = b.id [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:07:51+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50/id/459
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`tel`,`sid` FROM `customer` WHERE ( id='459' ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2019-10-18T10:08:01+08:00 ] 127.0.0.1 /api/netsign/showseal/userid/924/token/4e504cf24be03219a7e643062b691e50/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id as uid,b.* from customer as a,seal as b  where  1 and  a.sid > 0 and a.sid = b.id [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:08:39+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50/fid/99/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id='99' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( pid='99' )  [ RunTime:0.0156s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid='99' and status=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:08:51+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50/fid/99/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id='99' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( pid='99' )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid='99' and status=1 )  [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:09:28+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50/id/459
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`tel`,`sid` FROM `customer` WHERE ( id='459' ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:09:32+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fid D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 303 行.
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=66 )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid=66 and status=1 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: udatas D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 338 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:09:32+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Undefined index: id D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 425 行.
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:09:41+08:00 ] 127.0.0.1 /api/netsign/templates/userid/924/token/4e504cf24be03219a7e643062b691e50/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `template` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `template` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `template` WHERE ( status=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2019-10-18T10:09:43+08:00 ] 127.0.0.1 /api/netsign/templateinfo/userid/924/token/4e504cf24be03219a7e643062b691e50/id/305
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `template` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `template` WHERE ( id='305' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `templateson` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `templateson` WHERE ( fid='305' ) ORDER BY orders asc  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `customer` WHERE ( id='926' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='927' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:09:51+08:00 ] 127.0.0.1 /api/netsign/showseal/userid/924/token/4e504cf24be03219a7e643062b691e50/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id as uid,b.* from customer as a,seal as b  where  1 and  a.sid > 0 and a.sid = b.id [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:10:26+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50/fid/99/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id='99' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( pid='99' )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid='99' and status=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:10:31+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50/fid/99/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id='99' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( pid='99' )  [ RunTime:0.0156s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid='99' and status=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:10:40+08:00 ] 127.0.0.1 /api/netsign/signinfo/userid/924/token/4e504cf24be03219a7e643062b691e50/id/433
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,c.username,c.topimage,a.starttime,a.endtime,b.name,a.status from sign as a,template as b,customer as c where a.id = '433' and a.uid= c.id and a.mid = b.id  [ RunTime:0.0000s ]
+SQL: select c.sid,a.remark,a.issign,b.uid,b.orders,b.type,c.username,c.tel from signson as a ,templateson as b ,customer as c where a.fid = '433' and a.tsid = b.id  and b.uid=c.id  order by orders asc [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:10:43+08:00 ] 127.0.0.1 /api/netsign/signshow/userid/924/token/4e504cf24be03219a7e643062b691e50/id/433/type/1/orders/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='433' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2019-10-18T10:10:58+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50/id/476
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`tel`,`sid` FROM `customer` WHERE ( id='476' ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:11:04+08:00 ] 127.0.0.1 /api/netsign/signinfo/userid/924/token/4e504cf24be03219a7e643062b691e50/id/434
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,c.username,c.topimage,a.starttime,a.endtime,b.name,a.status from sign as a,template as b,customer as c where a.id = '434' and a.uid= c.id and a.mid = b.id  [ RunTime:0.0000s ]
+SQL: select c.sid,a.remark,a.issign,b.uid,b.orders,b.type,c.username,c.tel from signson as a ,templateson as b ,customer as c where a.fid = '434' and a.tsid = b.id  and b.uid=c.id  order by orders asc [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:11:18+08:00 ] 127.0.0.1 /api/login/appindex/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:11:20+08:00 ] 127.0.0.1 /api/netsign/index/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sign as so,
+
+(select a.*,b.orders,b.uid from signson as a , templateson as b where b.uid = 924 and a.tsid = b.id and a.issign = 1 group by a.fid) as son where so.id = son.fid and so.status = 1 and so.nownode = son.orders [ RunTime:0.0000s ]
+SQL: select * from sign where status=1 and uid='924' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='416' and b.orders='3' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='433' and b.orders='1' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='434' and b.orders='1' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `senduid` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `senduid` WHERE ( receiveuid = '924' and status = '2' and isout ='2'     ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT
+	*
+FROM
+	(
+		SELECT
+			b. NAME,
+			a.id,
+			a.starttime,
+			a.endtime,
+	        a.savetime,
+	        a.status
+		FROM
+			sign AS a,
+			template AS b
+		WHERE
+			a.uid = '924'
+		AND a.mid = b.id 
+		UNION ALL
+			SELECT
+				c. NAME,
+				d.id,
+				d.starttime,
+				d.endtime,
+			    d.savetime,
+			    d.status
+			FROM
+				(
+					SELECT
+						a.*, b. NAME
+					FROM
+						(
+							SELECT
+								fid,
+								orders
+							FROM
+								templateson
+							WHERE
+								uid = '924'
+							GROUP BY
+								fid
+						) AS a,
+						template AS b
+					WHERE
+						a.fid = b.id
+				) AS c
+			, sign AS d where c.fid = d.mid 
+	) e
+GROUP BY
+	id order by savetime desc
+LIMIT 10 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:11:23+08:00 ] 127.0.0.1 /api/netsign/waitmysign/userid/924/token/4e504cf24be03219a7e643062b691e50/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select c.name,d.id,d.starttime,d.endtime,d.`status` from (
+select a.*,b.name from (SELECT fid,orders FROM templateson WHERE uid = '924' GROUP BY fid) as a,template as b where a.fid=b.id) as c , sign as d where  c.fid = d.mid and c.orders = d.nownode
+			order by d.savetime desc limit 0,10 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:11:26+08:00 ] 127.0.0.1 /api/netsign/signinfo/userid/924/token/4e504cf24be03219a7e643062b691e50/id/433
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,c.username,c.topimage,a.starttime,a.endtime,b.name,a.status from sign as a,template as b,customer as c where a.id = '433' and a.uid= c.id and a.mid = b.id  [ RunTime:0.0000s ]
+SQL: select c.sid,a.remark,a.issign,b.uid,b.orders,b.type,c.username,c.tel from signson as a ,templateson as b ,customer as c where a.fid = '433' and a.tsid = b.id  and b.uid=c.id  order by orders asc [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:11:29+08:00 ] 127.0.0.1 /api/netsign/signshow/userid/924/token/4e504cf24be03219a7e643062b691e50/id/433/type/1/orders/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='433' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:12:51+08:00 ] 127.0.0.1 /api/login/appindex/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:12:52+08:00 ] 127.0.0.1 /api/netsign/index/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sign as so,
+
+(select a.*,b.orders,b.uid from signson as a , templateson as b where b.uid = 924 and a.tsid = b.id and a.issign = 1 group by a.fid) as son where so.id = son.fid and so.status = 1 and so.nownode = son.orders [ RunTime:0.0156s ]
+SQL: select * from sign where status=1 and uid='924' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='416' and b.orders='3' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='433' and b.orders='1' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='434' and b.orders='1' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `senduid` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `senduid` WHERE ( receiveuid = '924' and status = '2' and isout ='2'     ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT
+	*
+FROM
+	(
+		SELECT
+			b. NAME,
+			a.id,
+			a.starttime,
+			a.endtime,
+	        a.savetime,
+	        a.status
+		FROM
+			sign AS a,
+			template AS b
+		WHERE
+			a.uid = '924'
+		AND a.mid = b.id 
+		UNION ALL
+			SELECT
+				c. NAME,
+				d.id,
+				d.starttime,
+				d.endtime,
+			    d.savetime,
+			    d.status
+			FROM
+				(
+					SELECT
+						a.*, b. NAME
+					FROM
+						(
+							SELECT
+								fid,
+								orders
+							FROM
+								templateson
+							WHERE
+								uid = '924'
+							GROUP BY
+								fid
+						) AS a,
+						template AS b
+					WHERE
+						a.fid = b.id
+				) AS c
+			, sign AS d where c.fid = d.mid 
+	) e
+GROUP BY
+	id order by savetime desc
+LIMIT 10 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:13:35+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fid D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 303 行.
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=66 )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid=66 and status=1 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: udatas D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 338 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:13:36+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 425 行.
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:13:42+08:00 ] 127.0.0.1 /api/netsign/showseal/userid/924/token/4e504cf24be03219a7e643062b691e50/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 274 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id as uid,b.* from customer as a,seal as b  where  1 and  a.sid > 0 and a.sid = b.id [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:14:07+08:00 ] 127.0.0.1 /api/netsign/seallist/userid/924/token/4e504cf24be03219a7e643062b691e50/id/924
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: page D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 426 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`tel`,`sid` FROM `customer` WHERE ( id='924' ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2019-10-18T10:14:11+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50/fid/99/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id='99' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( pid='99' )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid='99' and status=1 )  [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:14:16+08:00 ] 127.0.0.1 /api/netsign/signname/userid/924/token/4e504cf24be03219a7e643062b691e50/fid/99/title/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: title D:\phpstudy_pro\WWW\wqxts\Application\Api\Controller\NetsignController.class.php 第 304 行.
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `framework` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`node_name` FROM `framework` WHERE ( type_id='99' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( pid='99' )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`worker`,`tel`,`topimage` FROM `customer` WHERE ( pid='99' and status=1 )  [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:14:58+08:00 ] 127.0.0.1 /api/netsign/signinfo/userid/924/token/4e504cf24be03219a7e643062b691e50/id/435
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,c.username,c.topimage,a.starttime,a.endtime,b.name,a.status from sign as a,template as b,customer as c where a.id = '435' and a.uid= c.id and a.mid = b.id  [ RunTime:0.0000s ]
+SQL: select c.sid,a.remark,a.issign,b.uid,b.orders,b.type,c.username,c.tel from signson as a ,templateson as b ,customer as c where a.fid = '435' and a.tsid = b.id  and b.uid=c.id  order by orders asc [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:14:58+08:00 ] 127.0.0.1 /api/netsign/signinfo/userid/924/token/4e504cf24be03219a7e643062b691e50/id/436
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,c.username,c.topimage,a.starttime,a.endtime,b.name,a.status from sign as a,template as b,customer as c where a.id = '436' and a.uid= c.id and a.mid = b.id  [ RunTime:0.0156s ]
+SQL: select c.sid,a.remark,a.issign,b.uid,b.orders,b.type,c.username,c.tel from signson as a ,templateson as b ,customer as c where a.fid = '436' and a.tsid = b.id  and b.uid=c.id  order by orders asc [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:15:21+08:00 ] 127.0.0.1 /api/login/appindex/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:15:23+08:00 ] 127.0.0.1 /api/netsign/index/userid/924/token/4e504cf24be03219a7e643062b691e50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sign as so,
+
+(select a.*,b.orders,b.uid from signson as a , templateson as b where b.uid = 924 and a.tsid = b.id and a.issign = 1 group by a.fid) as son where so.id = son.fid and so.status = 1 and so.nownode = son.orders [ RunTime:0.0000s ]
+SQL: select * from sign where status=1 and uid='924' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='416' and b.orders='3' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='433' and b.orders='1' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='434' and b.orders='1' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='435' and b.orders='1' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='436' and b.orders='1' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='437' and b.orders='1' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='438' and b.orders='1' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='439' and b.orders='1' [ RunTime:0.0000s ]
+SQL: select * from signson as a , templateson as b where a.tsid = b.id and a.fid='440' and b.orders='1' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `senduid` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `senduid` WHERE ( receiveuid = '924' and status = '2' and isout ='2'     ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT
+	*
+FROM
+	(
+		SELECT
+			b. NAME,
+			a.id,
+			a.starttime,
+			a.endtime,
+	        a.savetime,
+	        a.status
+		FROM
+			sign AS a,
+			template AS b
+		WHERE
+			a.uid = '924'
+		AND a.mid = b.id 
+		UNION ALL
+			SELECT
+				c. NAME,
+				d.id,
+				d.starttime,
+				d.endtime,
+			    d.savetime,
+			    d.status
+			FROM
+				(
+					SELECT
+						a.*, b. NAME
+					FROM
+						(
+							SELECT
+								fid,
+								orders
+							FROM
+								templateson
+							WHERE
+								uid = '924'
+							GROUP BY
+								fid
+						) AS a,
+						template AS b
+					WHERE
+						a.fid = b.id
+				) AS c
+			, sign AS d where c.fid = d.mid 
+	) e
+GROUP BY
+	id order by savetime desc
+LIMIT 10 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2019-10-18T10:15:25+08:00 ] 127.0.0.1 /api/netsign/waitmysign/userid/924/token/4e504cf24be03219a7e643062b691e50/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select c.name,d.id,d.starttime,d.endtime,d.`status` from (
+select a.*,b.name from (SELECT fid,orders FROM templateson WHERE uid = '924' GROUP BY fid) as a,template as b where a.fid=b.id) as c , sign as d where  c.fid = d.mid and c.orders = d.nownode
+			order by d.savetime desc limit 0,10 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:15:26+08:00 ] 127.0.0.1 /api/netsign/signinfo/userid/924/token/4e504cf24be03219a7e643062b691e50/id/440
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,c.username,c.topimage,a.starttime,a.endtime,b.name,a.status from sign as a,template as b,customer as c where a.id = '440' and a.uid= c.id and a.mid = b.id  [ RunTime:0.0000s ]
+SQL: select c.sid,a.remark,a.issign,b.uid,b.orders,b.type,c.username,c.tel from signson as a ,templateson as b ,customer as c where a.fid = '440' and a.tsid = b.id  and b.uid=c.id  order by orders asc [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2019-10-18T10:15:28+08:00 ] 127.0.0.1 /api/netsign/signshow/userid/924/token/4e504cf24be03219a7e643062b691e50/id/440/type/2/orders/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='440' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2019-10-18T10:15:37+08:00 ] 127.0.0.1 /api/netsign/signshow/userid/924/token/4e504cf24be03219a7e643062b691e50/id/440/type/2/orders/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='440' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:15:39+08:00 ] 127.0.0.1 /api/netsign/waitmysign/userid/924/token/4e504cf24be03219a7e643062b691e50/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select c.name,d.id,d.starttime,d.endtime,d.`status` from (
+select a.*,b.name from (SELECT fid,orders FROM templateson WHERE uid = '924' GROUP BY fid) as a,template as b where a.fid=b.id) as c , sign as d where  c.fid = d.mid and c.orders = d.nownode
+			order by d.savetime desc limit 0,10 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:15:43+08:00 ] 127.0.0.1 /api/netsign/signinfo/userid/924/token/4e504cf24be03219a7e643062b691e50/id/435
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,c.username,c.topimage,a.starttime,a.endtime,b.name,a.status from sign as a,template as b,customer as c where a.id = '435' and a.uid= c.id and a.mid = b.id  [ RunTime:0.0000s ]
+SQL: select c.sid,a.remark,a.issign,b.uid,b.orders,b.type,c.username,c.tel from signson as a ,templateson as b ,customer as c where a.fid = '435' and a.tsid = b.id  and b.uid=c.id  order by orders asc [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-10-18T10:15:45+08:00 ] 127.0.0.1 /api/netsign/signshow/userid/924/token/4e504cf24be03219a7e643062b691e50/id/435/type/2/orders/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `customer` WHERE ( id='924' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `seal` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `seal` WHERE ( id='47' ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `signimg` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `signimg` WHERE ( sid='435' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

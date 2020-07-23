@@ -1,0 +1,42 @@
+<include file="Index/header" />
+<form style="width:90%;text-align: center">
+    <table>
+        <tr>
+            <td align="right" height="50" width="50%"><label>印章名称：</label></td>
+            <td align="left"><input name="name" value="" class="input-text radius" placeholder="输入导航名称" style="width:200px;height: 30px"></td>
+        </tr>
+        <tr>
+            <td align="right" height="50"><label>印章图片：</label></td>
+            <td align="left">
+                <input type="hidden" name="img" id="imgs"/>
+                <img src="" id="show" width="100" height="50"><input type="button" id="uploadButton" value="上传图片" />
+            </td>
+        </tr>
+        <input type="hidden" name="creat_time" value="{:time()}"/>
+    </table>
+</form>
+
+<include file="Index/foot" />
+<script>
+    KindEditor.ready(function(K) {
+        var uploadbutton = K.uploadbutton({
+            button : K('#uploadButton')[0],
+            fieldName : 'imgFile',
+            url : '/admin/base/upload',
+            afterUpload : function(data) {
+                if (data.code === 1) {
+                    K('#show').attr('src',data.data);
+                    $("#imgs").val(data.data)
+                } else {
+                    alert(data.msg);
+                }
+            },
+            afterError : function(str) {
+                alert('自定义错误信息: ' + str);
+            }
+        });
+        uploadbutton.fileBox.change(function(e) {
+            uploadbutton.submit();
+        });
+    });
+</script>
